@@ -2,4 +2,31 @@
 @import  'sandal/core';
 @import  'core/mixins', 'core/functions', 'core/vars';
 
-body {}
+.banner {
+	width: 100%;
+	min-height: 100px;
+}
+
+section {
+	display: flex;
+	border-top: 2px solid red;
+
+	&:last-child {
+		border-bottom: 2px solid red;
+	}
+	
+	& > a {
+		flex: 1;
+		// 此处的height可以由内部的img撑起
+		height: 140px; 
+		border-left: 2px solid red;
+		background-color: green;
+		text-align: center;
+		line-height: 140px;
+		color: #fff;
+
+		&:first-child {
+			border-left-width: 0;
+		}
+	}
+}
