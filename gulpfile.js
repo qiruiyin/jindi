@@ -97,10 +97,10 @@
 	gulp.task('html', function() {
 		return gulp.src([_.tmpl + '/*.html'])
 			.pipe($.plumber())
-			.pipe($.fileInclude({
-				prefix: '@@',
-				basepath: '@file'
-			}))
+			// .pipe($.fileInclude({
+			// 	prefix: '@@',
+			// 	basepath: '@file'
+			// }))
 			.pipe(gulp.dest(_.app + '/'))
 			.pipe($.size({
 				title: 'HTML files:'

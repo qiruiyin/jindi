@@ -1,22 +1,3 @@
 @charset 'utf-8';
 @import  'sandal/core';
 @import  'core/mixins', 'core/functions', 'core/vars';
-
-header {
-	line-height: 50px;
-	border-bottom: 1px solid black;
-	font-size: 16px;
-
-	.back {
-		position: absolute;
-		top: 0;
-		left: px2em(20px);
-	}
-
-	h1 {
-		width: 100%;
-		text-align: center;
-		font-size: inherit;
-		line-height: inherit;
-	}
-}
