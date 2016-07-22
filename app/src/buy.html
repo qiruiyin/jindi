@@ -1,18 +1,8 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Your title">
-  <meta name="format-detection" content="telephone=no">
-  <title>demo</title>
-  <!-- <link rel="stylesheet" type="text/css" href="./pkgs/flexible/flexible.css"> -->
-  <link rel="stylesheet" href="./pkgs/mui/dist/css/mui.min.css">
-  <!-- <script src="./pkgs/flexible/flexible.js"></script> -->
-  <link rel="stylesheet" type="text/css" href="./css/buy.css">
-</head>
+@@include('./part/head.html')
+<title>buy</title>
+<link rel="stylesheet" type="text/css" href="./css/buy.css">
 <body>
   <header class="mui-bar mui-bar-nav">
     <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="javascript:history.go(-1)"></a>
@@ -44,7 +34,7 @@
       <div class="mui-card">
         <div class="mui-card-header">金地自在城3期</div>
         <div class="mui-card-content" >
-          <img class="img" src="../demo.jpg" alt="img" />
+          <a class="img" href="details.html"><img src="../demo.jpg" alt="img" /></a>
           <div class="img-desc">
             <span>9号线</span>
             <span>品牌地产</span>
