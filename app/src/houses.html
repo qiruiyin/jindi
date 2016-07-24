@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+@@include('./part/head.html')
+<title>房源</title>
+<link rel="stylesheet" type="text/css" href="./css/buy.css">
+<body>
+  <header class="mui-bar mui-bar-nav">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="javascript:history.go(-1)"></a>
+    <h1 class="mui-title">16号楼</h1>
+  </header>
+  <nav class="mui-bar mui-bar-tab">
+    <a class="mui-tab-item mui-active" href="#">
+      <span class="mui-icon mui-icon-home"></span>
+      <span class="mui-tab-label">首页</span>
+    </a>
+    <a class="mui-tab-item" href="#">
+      <span class="mui-icon mui-icon-email"></span>
+      <span class="mui-tab-label">邻里圈</span>
+    </a>
+    <a class="mui-tab-item" href="#">
+      <span class="mui-icon mui-icon-contact"></span>
+      <span class="mui-tab-label">我的</span>
+    </a>
+  </nav>
+  <div class="mui-content">
+    <div class="houses">
+      <ul class="mui-table-view">
+        <li class="mui-table-view-cell">
+          <div class="mui-card">
+            <div class="mui-card-content" >
+              <img class="img" src="./img/demo.jpg" alt="img" />
+              <div class="end-timer"></div>
+              <div class="desc">
+                <div class="oper">抢房源</div>
+                <p class="addr">金沙自在城3期 - 16号楼 - 1212室</p>
+                <p class="others"><span>2室1厅一卫 89m</span><span class="price">$ 180,000.00</span></p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="mui-table-view-cell">
+          <div class="mui-card">
+            <div class="mui-card-content" >
+              <img class="img" src="./img/demo.jpg" alt="img" />
+              <div class="end-timer"></div>
+              <div class="desc">
+                <div class="oper">抢房源</div>
+                <p class="addr">金沙自在城3期 - 16号楼 - 1212室</p>
+                <p class="others"><span>2室1厅一卫 89m</span><span class="price">$ 180,000.00</span></p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="mui-table-view-cell">
+          <div class="mui-card">
+            <div class="mui-card-content" >
+              <img class="img" src="./img/demo.jpg" alt="img" />
+              <div class="end-timer"></div>
+              <div class="desc">
+                <div class="oper">抢房源</div>
+                <p class="addr">金沙自在城3期 - 16号楼 - 1212室</p>
+                <p class="others"><span>2室1厅一卫 89m</span><span class="price">$ 180,000.00</span></p>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+@@include('./part/footer.html')
+<script>
+  mui.init({
+    swipeBack:true //启用右滑关闭功能
+  });
+  (function($) {
+
+  })(mui);
+</script>
+</body>
+</html>

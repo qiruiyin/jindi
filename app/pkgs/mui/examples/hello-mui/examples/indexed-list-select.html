@@ -415,44 +415,44 @@
 		<!--<script src="../js/mui.grouplist.testdata.js"></script>-->
 		<script type="text/javascript" charset="utf-8">
 			mui.init();
-			mui.ready(function() {
-				var header = document.querySelector('header.mui-bar');
-				var list = document.getElementById('list');
-				var done = document.getElementById('done');
-				//calc hieght
-				list.style.height = (document.body.offsetHeight - header.offsetHeight) + 'px';
-				//create
-				window.indexedList = new mui.IndexedList(list);
-				//done event
-				done.addEventListener('tap', function() {
-					var checkboxArray = [].slice.call(list.querySelectorAll('input[type="checkbox"]'));
-					var checkedValues = [];
-					checkboxArray.forEach(function(box) {
-						if (box.checked) {
-							checkedValues.push(box.parentNode.innerText);
-						}
-					});
-					if (checkedValues.length > 0) {
-						mui.alert('你选择了: ' + checkedValues);
-					} else {
-						mui.alert('你没选择任何机场');
-					}
-				}, false);
-				mui('.mui-indexed-list-inner').on('change', 'input', function() {
-					var count = list.querySelectorAll('input[type="checkbox"]:checked').length;
-					var value = count ? "完成(" + count + ")" : "完成";
-					done.innerHTML = value;
-					if (count) {
-						if (done.classList.contains("mui-disabled")) {
-							done.classList.remove("mui-disabled");
-						}
-					} else {
-						if (!done.classList.contains("mui-disabled")) {
-							done.classList.add("mui-disabled");
-						}
-					}
-				});
-			});
+			// mui.ready(function() {
+			// 	var header = document.querySelector('header.mui-bar');
+			// 	var list = document.getElementById('list');
+			// 	var done = document.getElementById('done');
+			// 	//calc hieght
+			// 	list.style.height = (document.body.offsetHeight - header.offsetHeight) + 'px';
+			// 	//create
+			// 	window.indexedList = new mui.IndexedList(list);
+			// 	//done event
+			// 	done.addEventListener('tap', function() {
+			// 		var checkboxArray = [].slice.call(list.querySelectorAll('input[type="checkbox"]'));
+			// 		var checkedValues = [];
+			// 		checkboxArray.forEach(function(box) {
+			// 			if (box.checked) {
+			// 				checkedValues.push(box.parentNode.innerText);
+			// 			}
+			// 		});
+			// 		if (checkedValues.length > 0) {
+			// 			mui.alert('你选择了: ' + checkedValues);
+			// 		} else {
+			// 			mui.alert('你没选择任何机场');
+			// 		}
+			// 	}, false);
+			// 	mui('.mui-indexed-list-inner').on('change', 'input', function() {
+			// 		var count = list.querySelectorAll('input[type="checkbox"]:checked').length;
+			// 		var value = count ? "完成(" + count + ")" : "完成";
+			// 		done.innerHTML = value;
+			// 		if (count) {
+			// 			if (done.classList.contains("mui-disabled")) {
+			// 				done.classList.remove("mui-disabled");
+			// 			}
+			// 		} else {
+			// 			if (!done.classList.contains("mui-disabled")) {
+			// 				done.classList.add("mui-disabled");
+			// 			}
+			// 		}
+			// 	});
+			// });
 		</script>
 	</body>
 

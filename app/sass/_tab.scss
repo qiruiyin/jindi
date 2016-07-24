@@ -1,0 +1,27 @@
+@charset 'utf-8';
+@import 'sandal/core';
+@import 'core/mixins', 'core/functions', 'core/vars';
+
+.tab {
+
+}
+
+.tab-header {
+	display: flex;
+	text-align: center;
+
+	a {
+		flex: 1;
+		margin: 0 3px;
+		border-bottom: 1px solid;
+		border-right: 1px solid ;
+		
+		&:first-child {
+			margin-left: 0;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}

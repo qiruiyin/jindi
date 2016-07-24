@@ -1,0 +1,50 @@
+@charset 'utf-8';
+@import  'sandal/core';
+@import  'core/mixins', 'core/functions', 'core/vars';
+
+.mui-input-group:after {
+	height: 0;
+}
+
+.mui-button-row {
+	margin: 10px;
+
+	.mui-btn {
+		width: 100%;
+	}
+}
+
+.choose {
+	margin: 0 15px;
+	line-height: 40px;
+}
+
+.state {
+	li {
+		margin: 15px;
+	}
+	a {
+		position: relative;
+		font-size: 20px;
+		border-radius: 6px;
+		line-height: 2;
+		color: #fff;
+		background-color: red;
+		text-align: center;
+		display: block;
+	}
+
+	i {
+		position: absolute;
+		left: 0;
+		width: 46px;
+		height: 100%;
+		border-right: 1px solid #fff;
+	}
+
+	&.state1 {
+		a {
+			padding-left: 50px;
+		}
+	}
+}

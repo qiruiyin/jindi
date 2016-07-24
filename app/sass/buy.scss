@@ -13,36 +13,45 @@
 }
 
 .buildings .mui-card {
+  margin: 0 auto;
+  border-width: 0;
+
+  .mui-card-header {
+    font-size: 16px;
+    font-weight: bolder;
+  }
+  
   .img-desc {
   	float: left;
  	  position: relative;
  	  margin-left: 1em;
   	margin-top: -2em;
+    color: #fff;
 	
-	span {
+	  span {
       line-height: 16px;
-	  display: inline-block;
-	  
-	  &:first-child {
-	  	padding-right: 3px;
-	  	border-right: 1px solid;
-  	  }
-	}
+  	  display: inline-block;
+  	  
+  	  &:first-child {
+  	  	padding-right: 3px;
+  	  	border-right: 2px solid #fff;
+    	}
+  	}
   }
   
   .desc {
-  	& > p {
+    line-height: 1.75;
 
-  	}
+    a {
+      font-size: 12px;
+    }
   }
 
   .oper {
-  	line-height: 44px;
   	position: relative;
   	display: flex;
   	height: 44px;
-  	margin-top: -10px;
-  	margin-bottom: -10px;
+    line-height: 44px;
   	transition-duration: .3s;
   	text-decoration: none;
   	-webkit-box-pack: start;
@@ -51,10 +60,24 @@
   	-webkit-box-align: center;
   	-webkit-align-items: center;
   	align-items: center;
+    text-align: center;
 
 	  & > div {
 		  flex: 1;
+      border-left: 1px solid $borderColor;
+      border-bottom: 1px solid $borderColor;
+
+      &:first-child {
+        border-left-width: 0; 
+      }
 	  }
+  }
+  .huxing {
+    color: $colorBlack;
+    margin-top: 10px;
+  }
+  .addr {
+    color: $colorBlack;
   }
 }
 
@@ -71,6 +94,20 @@
   .desc {
   	width: 100%;
   	height: 60px;
+    padding-top: 10px;
   	padding-right: 60px;
+    color: #000;
+
+    p {
+      color: inherit;
+    }
+  }
+  .others {
+    span {
+      &:last-child {
+        text-indent: 10px;
+        display: inline-block;
+      }
+    }
   }
 }

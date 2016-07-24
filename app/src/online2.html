@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+@@include('./part/head.html')
+<title>在线选房</title>
+<link rel="stylesheet" type="text/css" href="./css/online.css">
+<body>
+  <header class="mui-bar mui-bar-nav">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="javascript:history.go(-1)"></a>
+    <h1 class="mui-title">在线选房</h1>
+  </header>
+  <div class="mui-content">
+    <h2 class="title-h2">请选择您要购买的居室类型</h2>
+    <div class="choose">
+      已选择：<span>无</span>
+    </div>
+
+    <ul class="state state1">
+      <li><a href="online3.html"><i>E</i>2室2厅1卫1厨 77.22m</a></li>
+      <li><a href="online3.html"><i>B</i>2室2厅1卫1厨 77.22m</a></li>
+      <li><a href="online3.html"><i>H1</i>2室2厅1卫1厨 77.22m</a></li>
+      <li><a href="online3.html"><i>H2</i>2室2厅1卫1厨 77.22m</a></li>
+    </ul>
+  </div>
+@@include('./part/footer.html')
+<script>
+  mui.init({
+    swipeBack:true //启用右滑关闭功能
+  });
+  (function($) {
+
+  })(mui);
+</script>
+</body>
+</html>

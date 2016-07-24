@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+@@include('./part/head.html')
+<title>房源</title>
+<link rel="stylesheet" type="text/css" href="./css/houses-detail.css">
+<body>
+  <header class="mui-bar mui-bar-nav">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="javascript:history.go(-1)"></a>
+    <h1 class="mui-title">16号楼</h1>
+  </header>
+  <nav class="mui-bar mui-bar-tab">
+    <a class="mui-tab-item mui-active" href="#">
+      <span class="mui-icon mui-icon-home"></span>
+      <span class="mui-tab-label">预约看房</span>
+    </a>
+    <a class="mui-tab-item" href="#">
+      <span class="mui-icon mui-icon-email"></span>
+      <span class="mui-tab-label">抢房源</span>
+    </a>
+  </nav>
+  <div class="mui-content">
+    <img src="./img/demo.jpg">
+    <div class="houses-label">
+      <!-- <img class="tel" />  -->
+      <div class="addr">松江区
+        <p>金地自在城3期－10号楼－1212室</p>
+      </div>
+      <p class="strong">
+        <span>品牌地产</span>
+        <span>小户型</span>
+        <span>轨交房</span>
+      </p>
+    </div>
+
+    <div class="houses-price">
+      <p>总价<span>¥1,890,000,000</span></p>
+      <p>单价<span>¥23,000,000</span></p>
+    </div>
+
+    <ul class="houses-info">
+      <li class="star">
+        户型<span>2室2厅1卫</span>
+      </li>
+      <li class="star">
+        面积<span>89平方米</span>
+      </li>
+      <li class="star">
+        朝向<span>南</span>
+      </li>
+      <li class="star">
+        装修<span>精装修</span>
+      </li>
+      <li class="star">
+        楼层<span>12/38</span>
+      </li>
+    </ul>
+
+    <div class="map">
+      <img src="./img/demo.jpg">
+    </div>
+
+    <div class="houses-around">
+      <h3>周边</h3>
+      <div class="flex-container">
+        <a id="icon-icon-contact"><span class="mui-icon mui-icon-contact"></span></a>
+        <a id="icon-icon-contact"><span class="mui-icon mui-icon-contact"></span></a>
+        <a id="icon-icon-contact"><span class="mui-icon mui-icon-contact"></span></a>
+        <a id="icon-icon-contact"><span class="mui-icon mui-icon-contact"></span></a>
+        <a id="icon-icon-contact"><span class="mui-icon mui-icon-contact"></span></a>
+        <a id="icon-icon-contact"><span class="mui-icon mui-icon-contact"></span></a>
+      </div>
+    </div>
+  </div>
+@@include('./part/footer.html')
+<script>
+  mui.init({
+    swipeBack:true //启用右滑关闭功能
+  });
+  (function($) {
+
+  })(mui);
+</script>
+</body>
+</html>

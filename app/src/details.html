@@ -2,154 +2,373 @@
 <html>
 @@include('./part/head.html')
 <title>details</title>
+<link rel="stylesheet" type="text/css" href="./css/details.css">
 <body>
-  <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="javascript:history.go(-1)"></a>
+  <nav class="mui-bar mui-bar-tab">
+    <a class="mui-tab-item mui-active" href="#">
+      <span class="mui-icon mui-icon-home"></span>
+      <span class="mui-tab-label">预约看房</span>
+    </a>
+    <a class="mui-tab-item" href="#">
+      <span class="mui-icon mui-icon-email"></span>
+      <span class="mui-tab-label">立即购买</span>
+    </a>
+  </nav>
+  
+  <header class="mui-bar mui-bar-nav">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="javascript:history.go(-1)"></a>
+  </header>
   <div class="mui-content">
-      <div style="padding: 10px 10px;">
-        <div id="segmentedControl" class="mui-segmented-control">
+      <div class="details">
+        <div id="segmentedControl" class="mui-segmented-control mui-segmented-control-inverted mui-segmented-control-primary">
           <a class="mui-control-item mui-active" href="#item1">楼盘</a>
           <a class="mui-control-item" href="#item2">户型</a>
           <a class="mui-control-item" href="#item3">周边</a>
         </div>
       </div>
       <div>
-        <div id="item1" class="mui-control-content mui-active">
-          <div id="scroll" class="mui-scroll-wrapper">
-            <div class="mui-scroll">
+        <div id="item1" class="mui-control-content ">
+          <div id="slider" class="mui-slider" >
+            <div class="mui-slider-group mui-slider-loop">
+              <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+              <div class="mui-slider-item mui-slider-item-duplicate">
+                <a href="#">
+                  <img src="../img/demo.jpg">
+                </a>
+              </div>
+              <!-- 第一张 -->
+              <div class="mui-slider-item">
+                <a href="#">
+                  <img src="../img/demo.jpg">
+                </a>
+              </div>
+              <!-- 第二张 -->
+              <div class="mui-slider-item">
+                <a href="#">
+                  <img src="../img/demo.jpg">
+                </a>
+              </div>
+              <!-- 第三张 -->
+              <div class="mui-slider-item">
+                <a href="#">
+                  <img src="../img/demo.jpg">
+                </a>
+              </div>
+              <!-- 第四张 -->
+              <div class="mui-slider-item">
+                <a href="#">
+                  <img src="../img/demo.jpg">
+                </a>
+              </div>
+              <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+              <div class="mui-slider-item mui-slider-item-duplicate">
+                <a href="#">
+                  <img src="../img/demo.jpg">
+                </a>
+              </div>
+            </div>
+            <div class="mui-slider-indicator">
+              <div class="mui-indicator mui-active"></div>
+              <div class="mui-indicator"></div>
+              <div class="mui-indicator"></div>
+              <div class="mui-indicator"></div>
+            </div>
+          </div>
+          <div class="building-desc">
+            <h2>金地自在城3期</h2>
+            <p class="building-price">价格待定</p>
+            <p>开盘：预计2016年6月中旬初推高层（待售）</p>
+            <p>地址：松江路泗凤公路508弄（9号线泗泾站西南约300米）</p>
+
+            <div class="mui-table-view-cell mui-collapse info">
+              <a class="mui-navigate-right" href="#">更多详细信息</a>
+              <div class="mui-collapse-content">
+                <p><span>入住时间</span>：<span>预计2016年9月入住</span></p>
+                <p><span>物业类型</span>：<span>普通住宅</span></p>
+                <p><span>建筑类型</span>：<span>板楼，小高层、高层</span></p>
+                <p><span>装修状况</span>：<span>全装修</span></p>
+                <p><span>住户数</span>：<span>1446</span></p>
+                <p><span>容积率</span>：<span>1.90</span></p>
+                <p><span>绿化率</span>：<span>35%</span></p>
+                <p><span>产权年限</span>：<span>70年</span></p>
+                <p><span>停车位</span>：<span>共1136个，其中地上114个，地下约1022个，车位配比为1:0.78</span></p>
+              </div>
+            </div>
+
+            <h3>最新动态：</h3>
+            <p>金地自在城3期预计2016年6月中旬加推高层房源，约76平精致两房及90平3+1可变四房。金地自在城3期具体加推时间和价格待定。</p>
+
+            <h3>项目简介</h3>
+            <p class="msg">金地自在城3期时金地自在城第3期产品，是由金地集团打造的，位于松江区地铁9号线泗泾站旁，距徐家汇9站地铁。金地自在城总开发用地超过1000亩，以泗陈公路为界分南北幅地块开发。物业类型涵盖：公寓、洋房、别墅等多种形态，并规划有2座主题会所、幼儿园、九年制一贯制学校、风情商业街、邻里中心等设施。</p>
+            <p class="msg">金地自在城3期在主推约75平米2房，约80-110平米3房，全装修交付；并在3期北侧打造了一条艺术风情商业街，让生活充满时尚艺术。相比金地自在城2期，3期更贴地铁9号线泗站、大润发超市等各项生活配套。</p>
+          </div>  
+        </div>
+        <div id="item2" class="mui-control-content huxing-desc">
+          <div style="padding: 10px 10px;">
+            <div id="segmentedControl" class="mui-segmented-control mui-segmented-control-inverted mui-segmented-control-primary">
+              <a class="mui-control-item mui-active" href="#item11">二居室（3）</a>
+              <a class="mui-control-item" href="#item12">三居室（2）</a>
+            </div>
+          </div>
+          <div>
+            <div id="item11" class="mui-control-content mui-active">
+              <span class="tips">本页面提及面积，无特殊说明均指</span>
+
               <ul class="mui-table-view">
                 <li class="mui-table-view-cell">
-                  第一个选项卡子项-1
+                  <div class="mui-card huxing-msg">
+                    <a href=""><img src="./img/demo.jpg"></a>
+                    <ul class="huxing-msg-state">
+                      <li>E户型</li>
+                      <li>2室2厅1卫</li>
+                      <li>80平方米</li>
+                      <li>在售</li>
+                    </ul>
+                    <ul class="huxing-msg-state">
+                      <li>可售100套</li>
+                      <li>南北通透</li>
+                      <li>200万元／套</li>
+                    </ul>
+                    <div class="mui-card-footer">
+                      <a class="mui-card-link" href="">户型直播间</a>
+                      <a class="mui-card-link" href="">VR样板间</a>
+                    </div>
+                  </div>
                 </li>
                 <li class="mui-table-view-cell">
-                  第一个选项卡子项-2
+                  <div class="mui-card huxing-msg">
+                    <a href=""><img src="./img/demo.jpg"></a>
+                    <ul class="huxing-msg-state">
+                      <li>E户型</li>
+                      <li>2室2厅1卫</li>
+                      <li>80平方米</li>
+                      <li>在售</li>
+                    </ul>
+                    <ul class="huxing-msg-state">
+                      <li>可售100套</li>
+                      <li>南北通透</li>
+                      <li>200万元／套</li>
+                    </ul>
+                    <div class="mui-card-footer">
+                      <a class="mui-card-link" href="">户型直播间</a>
+                      <a class="mui-card-link" href="">VR样板间</a>
+                    </div>
+                  </div>
                 </li>
                 <li class="mui-table-view-cell">
-                  第一个选项卡子项-3
+                  <div class="mui-card huxing-msg">
+                    <a href=""><img src="./img/demo.jpg"></a>
+                    <ul class="huxing-msg-state">
+                      <li>E户型</li>
+                      <li>2室2厅1卫</li>
+                      <li>80平方米</li>
+                      <li>在售</li>
+                    </ul>
+                    <ul class="huxing-msg-state">
+                      <li>可售100套</li>
+                      <li>南北通透</li>
+                      <li>200万元／套</li>
+                    </ul>
+                    <div class="mui-card-footer">
+                      <a class="mui-card-link" href="">户型直播间</a>
+                      <a class="mui-card-link" href="">VR样板间</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div id="item12" class="mui-control-content">
+              <span class="tips">本页面提及面积，无特殊说明均指</span>
+              <ul class="mui-table-view">
+                <li class="mui-table-view-cell">
+                  <div class="mui-card huxing-msg">
+                    <a href=""><img src="./img/demo.jpg"></a>
+                    <ul class="huxing-msg-state">
+                      <li>E户型</li>
+                      <li>2室2厅1卫</li>
+                      <li>80平方米</li>
+                      <li>在售</li>
+                    </ul>
+                    <ul class="huxing-msg-state">
+                      <li>可售100套</li>
+                      <li>南北通透</li>
+                      <li>200万元／套</li>
+                    </ul>
+                    <div class="mui-card-footer">
+                      <a class="mui-card-link" href="">户型直播间</a>
+                      <a class="mui-card-link" href="">VR样板间</a>
+                    </div>
+                  </div>
                 </li>
                 <li class="mui-table-view-cell">
-                  第一个选项卡子项-4
+                  <div class="mui-card huxing-msg">
+                    <a href=""><img src="./img/demo.jpg"></a>
+                    <ul class="huxing-msg-state">
+                      <li>E户型</li>
+                      <li>2室2厅1卫</li>
+                      <li>80平方米</li>
+                      <li>在售</li>
+                    </ul>
+                    <ul class="huxing-msg-state">
+                      <li>可售100套</li>
+                      <li>南北通透</li>
+                      <li>200万元／套</li>
+                    </ul>
+                    <div class="mui-card-footer">
+                      <a class="mui-card-link" href="">户型直播间</a>
+                      <a class="mui-card-link" href="">VR样板间</a>
+                    </div>
+                  </div>
                 </li>
                 <li class="mui-table-view-cell">
-                  第一个选项卡子项-5
-                </li>
-                <li class="mui-table-view-cell">
-                  第一个选项卡子项-6
-                </li>
-                <li class="mui-table-view-cell">
-                  第一个选项卡子项-7
-                </li>
-                <li class="mui-table-view-cell">
-                  第一个选项卡子项-8
-                </li>
-                <li class="mui-table-view-cell">
-                  第一个选项卡子项-9
-                </li>
-                <li class="mui-table-view-cell">
-                  第一个选项卡子项-10
-                </li>
-                <li class="mui-table-view-cell">
-                  第一个选项卡子项-11
-                </li>
-                <li class="mui-table-view-cell">
-                  第一个选项卡子项-12
-                </li>
-                <li class="mui-table-view-cell">
-                  第一个选项卡子项-13
-                </li>
-                <li class="mui-table-view-cell">
-                  第一个选项卡子项-14
-                </li>
-                <li class="mui-table-view-cell">
-                  第一个选项卡子项-15
-                </li>
-                <li class="mui-table-view-cell">
-                  第一个选项卡子项-16
-                </li>
-                <li class="mui-table-view-cell">
-                  第一个选项卡子项-17
-                </li>
-                <li class="mui-table-view-cell">
-                  第一个选项卡子项-18
-                </li>
-                <li class="mui-table-view-cell">
-                  第一个选项卡子项-19
-                </li>
-                <li class="mui-table-view-cell">
-                  第一个选项卡子项-20
+                  <div class="mui-card huxing-msg">
+                    <a href=""><img src="./img/demo.jpg"></a>
+                    <ul class="huxing-msg-state">
+                      <li>E户型</li>
+                      <li>2室2厅1卫</li>
+                      <li>80平方米</li>
+                      <li>在售</li>
+                    </ul>
+                    <ul class="huxing-msg-state">
+                      <li>可售100套</li>
+                      <li>南北通透</li>
+                      <li>200万元／套</li>
+                    </ul>
+                    <div class="mui-card-footer">
+                      <a class="mui-card-link" href="">户型直播间</a>
+                      <a class="mui-card-link" href="">VR样板间</a>
+                    </div>
+                  </div>
                 </li>
               </ul>
             </div>
           </div>
         </div>
-        <div id="item2" class="mui-control-content">
+        <div id="item3" class="mui-control-content around mui-active">
+          <img src="./img/demo.jpg">
           <ul class="mui-table-view">
             <li class="mui-table-view-cell">
-              第二个选项卡子项-1
+              <div class="mui-card around-msg">
+                <div class="mui-card-header">地铁</div>
+                <div class="mui-card-content">
+                  <dl>
+                    <dt>泗泾<span>565米</span></dt>
+                    <dd>地铁9号线</dd>
+                    <dt>泗泾<span>565米</span></dt>
+                    <dd>地铁9号线</dd>
+                  </dl>
+                </div>
+              </div>
             </li>
             <li class="mui-table-view-cell">
-              第二个选项卡子项-2
+              <div class="mui-card around-msg">
+                <div class="mui-card-header">公交</div>
+                <div class="mui-card-content">
+                  <dl>
+                    <dt>泗泾汽车站<span>565米</span></dt>
+                    <dd>1845路；1846路；松江45路；松江46路；</dd>
+                    <dt>泗宝路泗泾汽车站<span>565米</span></dt>
+                    <dd>松江45路</dd>
+                    <dt>泗宝路泗泾汽车站<span>565米</span></dt>
+                    <dd>松江45路</dd>
+                    <dt>泗宝路泗泾汽车站<span>565米</span></dt>
+                    <dd>松江45路</dd>
+                    <dt>泗宝路泗泾汽车站<span>565米</span></dt>
+                    <dd>松江45路</dd>
+                  </dl>
+                </div>
+              </div>
             </li>
             <li class="mui-table-view-cell">
-              第二个选项卡子项-3
+              <div class="mui-card around-msg">
+                <div class="mui-card-header">学校</div>
+                <div class="mui-card-content">
+                  <dl>
+                    <dt>新凯家园完全中学<span>565米</span></dt>
+                    <dt>松江区泗泾第二幼儿园同润部<span>565米</span></dt>
+                    <dt>松江区泗泾第二幼儿园同润部<span>565米</span></dt>
+                    <dt>松江区泗泾第二幼儿园同润部<span>565米</span></dt>
+                    <dt>松江区泗泾第二幼儿园同润部<span>565米</span></dt>
+                    <dt>松江区泗泾第二幼儿园同润部<span>565米</span></dt>
+                    <dt>松江区泗泾第二幼儿园同润部<span>565米</span></dt>
+                  </dl>
+                </div>
+              </div>
+            </li>
+            <li class="mui-table-view-cell">
+              <div class="mui-card around-msg">
+                <div class="mui-card-header">医院</div>
+                <div class="mui-card-content">
+                  <dl>
+                    <dt>泗泾镇社区医院<span>565米</span></dt>
+                    <dt>上海市松江区泗泾医院<span>565米</span></dt>
+                    <dt>朝阳中心卫生室<span>565米</span></dt>
+                    <dt>朝阳中心卫生室<span>565米</span></dt>
+                    <dt>朝阳中心卫生室<span>565米</span></dt>
+                    <dt>朝阳中心卫生室<span>565米</span></dt>
+                  </dl>
+                </div>
+              </div>
+            </li>
+            <li class="mui-table-view-cell">
+              <div class="mui-card around-msg">
+                <div class="mui-card-header">银行</div>
+                <div class="mui-card-content">
+                  <dl>
+                    <dt>泗泾镇社区医院<span>565米</span></dt>
+                    <dt>上海市松江区泗泾医院<span>565米</span></dt>
+                    <dt>朝阳中心卫生室<span>565米</span></dt>
+                    <dt>朝阳中心卫生室<span>565米</span></dt>
+                    <dt>朝阳中心卫生室<span>565米</span></dt>
+                    <dt>朝阳中心卫生室<span>565米</span></dt>
+                  </dl>
+                </div>
+              </div>
+            </li>
+            <li class="mui-table-view-cell">
+              <div class="mui-card around-msg">
+                <div class="mui-card-header">美食</div>
+                <div class="mui-card-content">
+                  <dl>
+                    <dt>泗泾镇社区医院<span>565米</span></dt>
+                    <dt>上海市松江区泗泾医院<span>565米</span></dt>
+                    <dt>朝阳中心卫生室<span>565米</span></dt>
+                    <dt>朝阳中心卫生室<span>565米</span></dt>
+                    <dt>朝阳中心卫生室<span>565米</span></dt>
+                    <dt>朝阳中心卫生室<span>565米</span></dt>
+                  </dl>
+                </div>
+              </div>
+            </li>
+            <li class="mui-table-view-cell">
+              <div class="mui-card around-msg">
+                <div class="mui-card-header">购物</div>
+                <div class="mui-card-content">
+                  <dl>
+                    <dt>泗泾镇社区医院<span>565米</span></dt>
+                    <dt>上海市松江区泗泾医院<span>565米</span></dt>
+                    <dt>朝阳中心卫生室<span>565米</span></dt>
+                    <dt>朝阳中心卫生室<span>565米</span></dt>
+                    <dt>朝阳中心卫生室<span>565米</span></dt>
+                    <dt>朝阳中心卫生室<span>565米</span></dt>
+                  </dl>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
-        <div id="item3" class="mui-control-content">
-          <ul class="mui-table-view">
-            <li class="mui-table-view-cell">
-              第三个选项卡子项-1
-            </li>
-            <li class="mui-table-view-cell">
-              第三个选项卡子项-2
-            </li>
-            <li class="mui-table-view-cell">
-              第三个选项卡子项-3
-            </li>
-          </ul>
-        </div>
-      </div>
-      <h5 class="mui-content-padded">Style</h5>
-      <div class="mui-card">
-        <form class="mui-input-group">
-          <div class="mui-input-row mui-radio">
-            <label>按钮</label>
-            <input name="style" type="radio" checked value="">
-          </div>
-          <div class="mui-input-row mui-radio">
-            <label>文字</label>
-            <input name="style" type="radio" value="inverted">
-          </div>
-        </form>
-      </div>
-      <h5 class="mui-content-padded">Color</h5>
-      <div class="mui-card">
-        <form class="mui-input-group">
-          <div class="mui-input-row mui-radio">
-            <label><span class="mui-bg-primary" style="display:block;width:25px;height:25px;"></span>
-            </label>
-            <input name="color" type="radio" checked value="primary">
-          </div>
-          <div class="mui-input-row mui-radio">
-            <label><span class="mui-bg-positive" style="display:block;width:25px;height:25px;"></span>
-            </label>
-            <input name="color" type="radio" value="positive">
-          </div>
-          <div class="mui-input-row mui-radio">
-            <label><span class="mui-bg-negative" style="display:block;width:25px;height:25px;"></span>
-            </label>
-            <input name="color" type="radio" value="negative">
-          </div>
-        </form>
       </div>
     </div>
-<script src="./pkgs/mui/dist/js/mui.min.js"></script>
+
+@@include('./part/footer.html')
 <script>
   mui.init({
     swipeBack:true //启用右滑关闭功能
   });
-  (function($) {
-
-  })(mui);
+  var slider = mui("#slider");
+  slider.slider({
+    interval: 5000
+  });
 </script>
 </body>
 </html>

@@ -1,3 +1,50 @@
 @charset 'utf-8';
-@import 'sandal/core';
+@import 'sandal/core', 'sandal/core/reset';
 @import 'core/mixins', 'core/functions', 'core/vars';
+
+body {
+	font-size: 14px;
+}
+
+a {
+	color: $colorGray;
+}
+
+.mui-title {
+	color: $colorRed;
+}
+
+.mui-bar-tab .mui-tab-item.mui-active {
+	color: $colorGray;
+}
+
+.mui-icon-back:before,
+.mui-icon-left-nav:before {
+	color: $colorRed;
+}
+
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
+	color: $colorRed;
+	border-bottom-color: $colorRed;
+}
+
+.mui-card {
+  border-radius: 0;
+}
+
+.title-h2 {
+	position: relative;
+  text-indent: 23px;
+  border-bottom: 1px solid $borderColor;
+	margin-top: 5px;
+
+  &:before{
+  	content: '';
+  	position: absolute;
+  	left: 15px;
+  	top: 8px;
+  	width: 5px;
+  	height: 15px;
+  	background-color: $colorRed;
+  }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+@@include('./part/head.html')
+<title>房源</title>
+<link rel="stylesheet" type="text/css" href="./css/buy.css">
+<body>
+  <header class="mui-bar mui-bar-nav">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="javascript:history.go(-1)"></a>
+    <h1 class="mui-title">购物车</h1>
+  </header>
+  <nav class="mui-bar mui-bar-tab">
+    <a class="mui-tab-item mui-active" href="#">
+      <span class="mui-icon mui-icon-home"></span>
+      <span class="mui-tab-label">首页</span>
+    </a>
+    <a class="mui-tab-item" href="#">
+      <span class="mui-icon mui-icon-email"></span>
+      <span class="mui-tab-label">邻里圈</span>
+    </a>
+    <a class="mui-tab-item" href="#">
+      <span class="mui-icon mui-icon-contact"></span>
+      <span class="mui-tab-label">我的</span>
+    </a>
+  </nav>
+  <div class="mui-content">
+    <ul class="mui-table-view">
+      <li data-group="A" class="mui-table-view-divider mui-indexed-list-group mui-checkbox mui-left">
+        <input type="checkbox">
+        <div class="title">金地自在城3期</div>
+        <div class="oper">编辑</div>
+      </li>
+      <li data-value="AKU" data-tags="AKeSu" class="mui-table-view-cell mui-indexed-list-item mui-checkbox mui-left">
+        <input type="checkbox" />
+        <img class="mui-media-object mui-pull-left" src="../img/demo.jpg">
+        <div class="mui-media-body">
+          <p>588弄7号楼202室<span class="price">¥1000.00</span></p>
+          <p class="">两居室 B户型</p>
+          <p class="">2室2厅1卫一厨 80平方米</p>
+        </div>
+      </li>
+      <li data-value="AKU" data-tags="AKeSu" class="mui-table-view-cell mui-indexed-list-item mui-checkbox mui-left">
+        <input type="checkbox" />
+        <img class="mui-media-object mui-pull-left" src="../img/demo.jpg">
+        <div class="mui-media-body">
+          <p>588弄7号楼202室<span class="price">¥1000.00</span></p>
+          <p class="">两居室 B户型</p>
+          <p class="">2室2厅1卫一厨 80平方米</p>
+        </div>
+      </li>
+      <li data-value="AKU" data-tags="AKeSu" class="mui-table-view-cell mui-indexed-list-item mui-checkbox mui-left">
+        <input type="checkbox" />
+        <img class="mui-media-object mui-pull-left" src="../img/demo.jpg">
+        <div class="mui-media-body">
+          <p>588弄7号楼202室<span class="price">¥1000.00</span></p>
+          <p class="">两居室 B户型</p>
+          <p class="">2室2厅1卫一厨 80平方米</p>
+        </div>
+      </li>
+      <li data-value="AKU" data-tags="AKeSu" class="mui-table-view-cell mui-indexed-list-item mui-checkbox mui-left">
+        <input type="checkbox" />
+        <img class="mui-media-object mui-pull-left" src="../img/demo.jpg">
+        <div class="mui-media-body">
+          <p>588弄7号楼202室<span class="price">¥1000.00</span></p>
+          <p class="">两居室 B户型</p>
+          <p class="">2室2厅1卫一厨 80平方米</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+@@include('./part/footer.html')
+<script>
+  mui.init({
+    swipeBack:true //启用右滑关闭功能
+  });
+</script>
+</body>
+</html>
