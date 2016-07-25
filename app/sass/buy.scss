@@ -2,15 +2,7 @@
 @import  'sandal/core';
 @import  'core/mixins', 'core/functions', 'core/vars';
 
-.mui-card {
-  box-shadow: none;
 
-  .img img {
-  	width: 100%;
-  	min-height: 100px;
-  	background-color: #E67E22;
-  }
-}
 
 .buildings .mui-card {
   margin: 0 auto;
@@ -88,7 +80,6 @@
   	position: absolute;
   	right: 0;
   	width: 60px;
-  	height: 100%;
   }
   
   .desc {

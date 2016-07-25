@@ -1,0 +1,29 @@
+@charset 'utf-8';
+@import  'sandal/core';
+@import  'core/mixins', 'core/functions', 'core/vars';
+
+.hardcover .mui-card {
+  margin: 0 auto;
+	
+  .oper {
+  	position: absolute;
+  	right: 0;
+  	width: 60px;
+  }
+  
+  .desc {
+  	width: 100%;
+  	height: 60px;
+    padding-top: 10px;
+  	padding-right: 60px;
+    color: #000;
+
+    p {
+      color: inherit;
+    }
+
+    .choosed {
+      color: $colorGray;
+    }
+  }
+}

@@ -30,6 +30,13 @@ a {
 
 .mui-card {
   border-radius: 0;
+  box-shadow: none;
+
+  .img img {
+    width: 100%;
+    min-height: 100px;
+    background-color: #E67E22;
+  }
 }
 
 .title-h2 {
