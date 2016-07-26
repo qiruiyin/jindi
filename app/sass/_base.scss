@@ -6,8 +6,33 @@ body {
 	font-size: 14px;
 }
 
+.color-black {
+	color: $colorBlack;
+}
+.color-gray {
+	color: $colorGray;
+}
+.color-red {
+	color: $colorRed;
+}
+
+// 底部颜色
+.bg-red {
+  background-color: #bf210f;
+
+  .mui-tab-item.mui-active,
+  .mui-tab-label,
+  .mui-icon {
+    color: #fff;
+  }
+}
+
 a {
 	color: $colorGray;
+}
+
+p {
+  color: inherit;
 }
 
 .mui-title {

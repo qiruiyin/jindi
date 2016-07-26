@@ -6,76 +6,57 @@
 <body>
   <header class="mui-bar mui-bar-nav">
     <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="javascript:history.go(-1)"></a>
-    <h1 class="mui-title">个性精装</h1>
+    <h1 class="mui-title">套餐一</h1>
   </header>
-  <nav class="mui-bar mui-bar-tab">
+  <nav class="mui-bar mui-bar-tab bg-red">
     <a class="mui-tab-item mui-active" href="#">
       <span class="mui-icon mui-icon-home"></span>
       <span class="mui-tab-label">我要这样装</span>
     </a>
   </nav>
-  <div class="mui-content hardcover">
-    <div class="change">80-100m&sup2; </div>
-    <ul class="mui-table-view">
-      <li class="mui-table-view-cell">
-        <div class="mui-card">
-          <div class="mui-card-content" >
-            <a class="img" href=""><img src="./img/demo.jpg" alt="img" /></a>
-            <div class="end-timer"></div>
-            <div class="desc">
-              <div class="oper">我要这样装</div>
-              <p class="addr">套餐一：89m&sup2;现代简约两局</p>
-              <p class="choosed">当前66人选择</p>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="mui-table-view-cell">
-        <div class="mui-card">
-          <div class="mui-card-content" >
-            <a class="img" href=""><img src="./img/demo.jpg" alt="img" /></a>
-            <div class="end-timer"></div>
-            <div class="desc">
-              <div class="oper">我要这样装</div>
-              <p class="addr">套餐一：89m&sup2;现代简约两局</p>
-              <p class="choosed">当前66人选择</p>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="mui-table-view-cell">
-        <div class="mui-card">
-          <div class="mui-card-content" >
-            <a class="img" href=""><img src="./img/demo.jpg" alt="img" /></a>
-            <div class="end-timer"></div>
-            <div class="desc">
-              <div class="oper">我要这样装</div>
-              <p class="addr">套餐一：89m&sup2;现代简约两局</p>
-              <p class="choosed">当前66人选择</p>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="mui-table-view-cell">
-        <div class="mui-card">
-          <div class="mui-card-content" >
-            <a class="img" href=""><img src="./img/demo.jpg" alt="img" /></a>
-            <div class="end-timer"></div>
-            <div class="desc">
-              <div class="oper">我要这样装</div>
-              <p class="addr">套餐一：89m&sup2;现代简约两局</p>
-              <p class="choosed">当前66人选择</p>
-            </div>
-          </div>
-        </div>
-      </li>
-    </ul>
+  <div class="mui-content hardcover-package">
+    <img src="./img/demo.jpg">
+    <div class="hardcover-info">
+      <span>套餐一：89m&sup2;现代简约两居</span>
+      <div class="color-red">套餐内容：</div>
+      <p>地板＊1，墙纸＊1，瓷砖＊1，吊顶＊1，厨房＊1，卫生间＊1</p>
+      <div class="share mui-icon mui-icon-redo"></div>
+    </div>
+
+    <section>
+      <h2><span>地板</span></h2>
+      <img src="./img/demo.jpg" data-preview-src="" data-preview-group="1" />
+    </section>
+    <section>
+      <h2><span>墙纸</span></h2>
+      <img src="./img/demo.jpg" data-preview-src="" data-preview-group="1" />
+    </section>
+    <section>
+      <h2><span>瓷砖</span></h2>
+      <img src="./img/demo.jpg" data-preview-src="" data-preview-group="1" />
+    </section>
+    <section>
+      <h2><span>吊顶</span></h2>
+      <img src="./img/demo.jpg" data-preview-src="" data-preview-group="1" />
+    </section>
+    <section>
+      <h2><span>厨房</span></h2>
+      <img src="./img/demo.jpg" data-preview-src="" data-preview-group="1" />
+    </section>
+    <section>
+      <h2><span>卫生间</span></h2>
+      <img src="./img/demo.jpg" data-preview-src="" data-preview-group="1" />
+    </section>
   </div>
 @@include('./part/footer.html')
+<script src="./pkgs/mui/dist/js/mui.zoom.js"></script>
+<script src="./pkgs/mui/dist/js/mui.previewimage.js"></script>
 <script>
   mui.init({
     swipeBack:true //启用右滑关闭功能
   });
+
+  mui.previewImage();
   (function($) {
 
   })(mui);

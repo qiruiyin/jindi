@@ -23,12 +23,21 @@
     </a>
   </nav>
   <div class="mui-content hardcover">
-    <div class="change">80-100m&sup2; </div>
+    <div class="change">
+      <div class="change-btn">80-100m&sup2;<span class="mui-icon mui-icon-arrowdown"></span></div>
+      <ul class="change-list">
+        <li>不限</li>
+        <li>50-80m&sup2;</li>
+        <li>80-100m&sup2;</li>
+        <li>100-130m&sup2;</li>
+        <li>130m&sup2;及以上</li>
+      </ul>
+    </div>
     <ul class="mui-table-view">
       <li class="mui-table-view-cell">
         <div class="mui-card">
           <div class="mui-card-content" >
-            <a class="img" href=""><img src="./img/demo.jpg" alt="img" /></a>
+            <a class="img" href="hardcover-package.html"><img src="./img/demo.jpg" alt="img" /></a>
             <div class="end-timer"></div>
             <div class="desc">
               <div class="oper">我要这样装</div>
@@ -41,7 +50,7 @@
       <li class="mui-table-view-cell">
         <div class="mui-card">
           <div class="mui-card-content" >
-            <a class="img" href=""><img src="./img/demo.jpg" alt="img" /></a>
+            <a class="img" href="hardcover-package.html"><img src="./img/demo.jpg" alt="img" /></a>
             <div class="end-timer"></div>
             <div class="desc">
               <div class="oper">我要这样装</div>
@@ -54,7 +63,7 @@
       <li class="mui-table-view-cell">
         <div class="mui-card">
           <div class="mui-card-content" >
-            <a class="img" href=""><img src="./img/demo.jpg" alt="img" /></a>
+            <a class="img" href="hardcover-package.html"><img src="./img/demo.jpg" alt="img" /></a>
             <div class="end-timer"></div>
             <div class="desc">
               <div class="oper">我要这样装</div>
@@ -67,7 +76,7 @@
       <li class="mui-table-view-cell">
         <div class="mui-card">
           <div class="mui-card-content" >
-            <a class="img" href=""><img src="./img/demo.jpg" alt="img" /></a>
+            <a class="img" href="hardcover-package.html"><img src="./img/demo.jpg" alt="img" /></a>
             <div class="end-timer"></div>
             <div class="desc">
               <div class="oper">我要这样装</div>
@@ -84,9 +93,24 @@
   mui.init({
     swipeBack:true //启用右滑关闭功能
   });
-  (function($) {
+  $('.change-btn').on('click', function(){
+    $(this).parent().toggleClass('active');
+    changeIcon();
+  });
+  $('.change-list').find("li").on('click', function(){
+    var text = $(this).text();
+    $('.change-btn').html(text + '<span class="mui-icon mui-icon-arrowdown"></span>');
+    $('.change').removeClass("active");
+  });
 
-  })(mui);
+  function changeIcon(){
+    var $icon = $(".change").find('.mui-icon');
+    if ($icon.hasClass("mui-icon-arrowdown")) {
+      $icon.addClass("mui-icon-arrowup").removeClass("mui-icon-arrowdown");
+    } else {
+      $icon.addClass("mui-icon-arrowdown").removeClass("mui-icon-arrowup");
+    };
+  }
 </script>
 </body>
 </html>
