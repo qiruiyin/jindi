@@ -2,6 +2,38 @@
 @import  'sandal/core';
 @import  'core/mixins', 'core/functions', 'core/vars';
 
+$legendBlue: #2654ab;
+$legendRed: #bf210f;
+$legendYellow: #fab54d;
+$legendPink: #a824bf;
+$legendGray: #807d80;
+
+
+.online {
+	
+	i.mui-icon {
+		position: absolute;
+		right: 10px;
+		margin-top: 6px;
+		color: $colorGray;
+		display: block;
+	}
+
+	.input-add {
+		display: none;
+	}
+
+	&.add-input {
+		.mui-icon-plus {
+			display: none;
+		}
+
+		.input-add {
+			display: block;
+		}
+	}
+}
+
 .mui-input-group:after {
 	height: 0;
 }
@@ -46,5 +78,109 @@
 		a {
 			padding-left: 50px;
 		}
+	}
+}
+
+.legend {
+	padding: 5px 15px 8px;
+	border-bottom: 1px solid $borderColor;
+	.legend-state {
+		color: blue;
+
+		li {
+			display: inline-block;
+			line-height: 1;
+			background: none;
+		}
+
+		i {
+			width: 15px;
+			height: 15px;
+			margin-right: 3px;
+			background-color: blue;
+			display: inline-block;
+			vertical-align: bottom;
+		}
+	}
+}
+
+
+
+.legend-table {
+	margin: 10px 15px;
+	text-align: center;
+
+	table {
+		width: 100%;
+	}
+
+	td {
+		border: 1px solid #fff;
+		background-color: $legendPink;
+		color: #fff;
+		line-height: 2;
+
+		&:first-child {
+			width: 3em;
+			border: none;
+			color: $colorBlack;
+			text-decoration: underline;
+			background: none;
+		}
+	}
+}
+.legend {
+	.legend-blue {
+		color: $legendBlue;
+
+		i {
+			background-color: $legendBlue;
+		}
+	}
+	.legend-red {
+		color: $legendRed;
+
+		i {
+			background-color: $legendRed;
+		}
+	}
+	.legend-yellow {
+		color: $legendYellow;
+
+		i {
+			background-color: $legendYellow;
+		}
+	}
+	.legend-pink {
+		color: $legendPink;
+
+		i {
+			background-color: $legendPink;
+		}
+	}
+	.legend-gray {
+		color: $legendGray;
+
+		i {
+			background-color: $legendGray;
+		}
+	}
+}
+
+.legend-table {
+	.legend-blue {
+		background-color: $legendBlue;
+	}
+	.legend-red {
+		background-color: $legendRed;
+	}
+	.legend-yellow {
+		background-color: $legendYellow;
+	}
+	.legend-pink {
+		background-color: $legendPink;
+	}
+	.legend-gray {
+		background-color: $legendGray;
 	}
 }

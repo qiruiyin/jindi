@@ -8,7 +8,7 @@
     <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="javascript:history.go(-1)"></a>
     <h1 class="mui-title">在线选房</h1>
   </header>
-  <div class="mui-content">
+  <div class="mui-content online">
     <h2 class="title-h2">请在线填写购房人信息</h2>
     <form class="mui-input-group">
       <div class="mui-input-row">
@@ -17,7 +17,13 @@
       </div>
       <div class="mui-input-row">
         <label>手机</label>
-        <input type="text" class="mui-input-clear" placeholder="15800008888">
+        <input type="text" placeholder="15800008888">
+        <i class="mui-icon mui-icon-plus"></i>
+      </div>
+      <div class="mui-input-row input-add">
+        <label>手机2</label>
+        <input type="text" placeholder="15800008888">
+        <i class="mui-icon mui-icon-minus"></i>
       </div>
       
       <div class="mui-input-row">
@@ -28,6 +34,7 @@
           <option>金地自在城三期</option>
           <option>金地自在城三期</option>
         </select>
+        <i class="mui-icon mui-icon-arrowright"></i>
       </div>
       <div style="padding: 10px 15px;">
         <input name="checkbox" value="Item 1" type="checkbox" >
@@ -44,9 +51,12 @@
   mui.init({
     swipeBack:true //启用右滑关闭功能
   });
-  (function($) {
-
-  })(mui);
+  $('.mui-icon-plus').on('click', function(){
+    $(".online").addClass("add-input");
+  });
+  $('.mui-icon-minus').on('click', function(){
+    $(".online").removeClass("add-input");
+  });
 </script>
 </body>
 </html>

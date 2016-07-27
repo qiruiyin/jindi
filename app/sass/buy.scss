@@ -42,8 +42,7 @@
   .oper {
   	position: relative;
   	display: flex;
-  	height: 44px;
-    line-height: 44px;
+    line-height: 50px;
   	transition-duration: .3s;
   	text-decoration: none;
   	-webkit-box-pack: start;
@@ -63,6 +62,17 @@
         border-left-width: 0; 
       }
 	  }
+
+    .add-cart {
+      height: 50px;
+      line-height: 1;
+      color: $colorRed;
+
+      i {
+        margin-top: 3px;
+        display: block;
+      }
+    }
   }
   .huxing {
     color: $colorBlack;
@@ -75,11 +85,33 @@
 
 .houses .mui-card {
   margin: 0 auto;
+
+  .mui-card-content {
+    position: relative;
+  }
+
+  .end-timer {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    background-color: $colorRed;
+    color: #fff;
+    padding: 3px 8px;
+  }
 	
   .oper {
   	position: absolute;
-  	right: 0;
-  	width: 60px;
+  	right: 15px;
+    height: 50px;
+    line-height: 1;
+    color: $colorRed;
+    text-align: center;
+    
+    i {
+      margin: 0 auto;
+      margin-top: 3px;
+      display: block;
+    }
   }
   
   .desc {

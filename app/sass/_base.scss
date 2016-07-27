@@ -4,6 +4,8 @@
 
 body {
 	font-size: 14px;
+  background-color: #efeff4;
+  padding-bottom: 60px;
 }
 
 .color-black {
@@ -14,6 +16,9 @@ body {
 }
 .color-red {
 	color: $colorRed;
+}
+.color-yellow {
+  color: $colorYellow;
 }
 
 // 底部颜色
@@ -79,4 +84,11 @@ p {
   	height: 15px;
   	background-color: $colorRed;
   }
+}
+
+.left {
+  float: left;
+}
+.right {
+  float: right;
 }

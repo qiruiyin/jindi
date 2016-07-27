@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+@@include('./part/head.html')
+<title>房源</title>
+<link rel="stylesheet" type="text/css" href="./css/cart.css">
+<body>
+  <header class="mui-bar mui-bar-nav">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="javascript:history.go(-1)"></a>
+    <h1 class="mui-title">订单详情</h1>
+  </header>
+  <nav class="balance">
+    <div class="balance-oper">结算</div>
+    <div class="balance-all">
+      共<span>1</span>件合计：<span>¥1000.00</span>
+    </div>
+  </nav>
+  <div class="mui-content">
+    <ul class="mui-table-view">
+      <li class="mui-table-view-cell mui-indexed-list-item">
+        <span class="mui-media-object mui-pull-left mui-icon mui-icon-location"></span>
+        <div class="mui-media-body">
+          <p>购买人：曲筱绡<span class="tel">15800008888</span></p>
+          <p>联系地址：上海市杨浦区国定东路200号1号楼1211室<span class="mui-icon mui-icon-arrowright right"></span></p>
+          <p class="color-yellow">(收货不便时，可选择免费代收服务)</p>
+        </div>
+      </li>
+      <li class="mui-table-view-divider mui-indexed-list-group">
+        <div class="title color-black"><span class="mui-icon mui-icon-home"></span>金地自在城3期</div>
+      </li>
+      <li class="mui-table-view-cell mui-indexed-list-item">
+        <img class="mui-media-object mui-pull-left" src="../img/demo.jpg">
+        <div class="mui-media-body">
+          <p>588弄7号楼202室<span class="price">¥1000.00</span></p>
+          <p class="color-gray">两居室 B户型</p>
+          <p class="color-gray">2室2厅1卫一厨 80平方米</p>
+        </div>
+      </li>
+      <li class="mui-table-view-cell mui-indexed-list-item order-detail-info">
+        <span>商家优惠</span>
+        <p>开盘案场方案<span class="mui-icon mui-icon-arrowright color-black"></span></p>
+      </li>
+      <li class="mui-table-view-cell mui-indexed-list-item order-detail-info">
+        <span>配送方式</span>
+        <p>快递 免邮<span class="mui-icon mui-icon-arrowright color-black"></span></p>
+      </li>
+      <li class="mui-table-view-cell mui-indexed-list-item order-detail-info">
+        <div class="mui-input-row">
+          <label>买家留言</label>
+          <input type="text" placeholder="选填，可填您与商家达成的一致">
+        </div>
+      </li>
+      <li class="mui-table-view-cell mui-indexed-list-item order-detail-info">
+        <p class="right">共1件商品，合计<span class="color-red">¥1000</span></p>
+      </li>
+    </ul>
+
+    <div class="mui-table-view">
+      <div class="mui-input-row mui-checkbox">
+        <label>可用红包抵扣¥10.00</label>
+        <input name="checkbox1" value="Item 3" type="checkbox" >
+      </div>
+      <div class="mui-input-row mui-checkbox">
+        <label>使用积分点券</label>
+        <input name="checkbox1" value="Item 4" type="checkbox" checked>
+      </div>
+    </div>
+  </div>
+@@include('./part/footer.html')
+<script>
+  mui.init({
+    swipeBack:true //启用右滑关闭功能
+  });
+</script>
+</body>
+</html>

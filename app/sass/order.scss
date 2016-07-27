@@ -1,0 +1,40 @@
+@charset 'utf-8';
+@import 'sandal/core';
+@import 'core/mixins', 'core/functions', 'core/vars';
+
+
+.balance {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	box-shadow: 0 0 1px rgba(0,0,0,.85);
+	background: #fff;
+
+	.mui-checkbox {
+		float: left;
+		label {
+			padding-left: 40px;
+		}
+		input[type=checkbox] {
+			left: 10px;
+			top: 10px;
+		}
+	}
+	.balance-all {
+		float: right;
+		margin-right: 10px;
+		span {
+			color: $colorRed;
+		}
+	}
+
+	.balance-oper {
+		float: right;
+		padding: 0 1em;
+		color: #fff;
+		background: $colorRed;
+		display: block;
+	}
+}
