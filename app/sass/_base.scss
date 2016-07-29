@@ -3,6 +3,8 @@
 @import 'core/mixins', 'core/functions', 'core/vars';
 
 body {
+  max-width: 750px;
+  margin: 0 auto;
 	font-size: 14px;
   background-color: #efeff4;
 }
