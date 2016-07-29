@@ -7,8 +7,14 @@
 	
   .oper {
   	position: absolute;
-  	right: 0;
-  	width: 60px;
+  	right: 15px;
+  	width: 6em;
+    border-left: 1px solid $borderColor;
+    padding-left: 10px;
+    text-align: center;
+    span {
+      display: block;
+    }
   }
   
   .desc {

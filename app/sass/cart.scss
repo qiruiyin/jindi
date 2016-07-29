@@ -2,6 +2,9 @@
 @import 'sandal/core';
 @import 'core/mixins', 'core/functions', 'core/vars';
 
+.balance~.mui-content {
+	padding-bottom: 60px;
+}
 .mui-table-view-divider {
 	line-height: 2;
 

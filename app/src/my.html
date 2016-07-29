@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+@@include('./part/head.html')
+<title>首页</title>
+<link rel="stylesheet" href="./css/my.css">
+<body>
+  <header class="mui-bar mui-bar-nav">
+    <a class="mui-icon mui-icon-back" href="####"></a>
+    <h1 class="mui-title">我的</h1>
+  </header>
+  <nav class="mui-bar mui-bar-tab">
+    <a class="mui-tab-item mui-active" href="#">
+      <span class="mui-icon mui-icon-home"></span>
+      <span class="mui-tab-label">首页</span>
+    </a>
+    <a class="mui-tab-item" href="#">
+      <span class="mui-icon mui-icon-email"></span>
+      <span class="mui-tab-label">邻里圈</span>
+    </a>
+    <a class="mui-tab-item" href="#">
+      <span class="mui-icon mui-icon-contact"></span>
+      <span class="mui-tab-label">我的</span>
+    </a>
+  </nav>
+  <div class="mui-content">
+    <div class="my-face">
+      <img src="./img/my-header.png" alt="">
+      <p class="name">Soung</p>
+      <div class="integral">
+        <span class="mui-icon mui-icon-contact"></span>
+        积分：10000
+      </div>
+      <div class="edit mui-icon mui-icon-contact"></div>
+    </div>
+
+    <ul class="mui-table-view">
+      <li class="mui-table-view-cell">
+        <a class="mui-navigate-right">
+          <span class="mui-icon mui-icon-home"></span>
+          我的订单
+        </a>
+      </li>
+      <li class="mui-table-view-cell">
+        <a class="mui-navigate-right">
+          <span class="mui-icon mui-icon-home"></span>
+          我的预约
+        </a>
+      </li>
+    </ul>
+
+    <ul class="mui-table-view" style="margin-top: 10px;">
+      <li class="mui-table-view-cell">
+        <a class="mui-navigate-right">
+          <span class="mui-icon mui-icon-home"></span>
+          我的好友
+        </a>
+      </li>
+      <li class="mui-table-view-cell">
+        <a class="mui-navigate-right">
+          <span class="mui-icon mui-icon-home"></span>
+          我的帖子
+        </a>
+      </li>
+      <li class="mui-table-view-cell">
+        <a class="mui-navigate-right">
+          <span class="mui-icon mui-icon-home"></span>
+          我的红包
+        </a>
+      </li>
+    </ul>
+
+    <ul class="mui-table-view" style="margin-top: 10px;">
+      <li class="mui-table-view-cell">
+        <a class="mui-navigate-right">
+          <span class="mui-icon mui-icon-home"></span>
+          我的消息
+        </a>
+      </li>
+      <li class="mui-table-view-cell">
+        <a class="mui-navigate-right">
+          <span class="mui-icon mui-icon-home"></span>
+          意见反馈
+        </a>
+      </li>
+    </ul>
+  </div>
+@@include('./part/footer.html')
+<script>
+  mui.init({
+    swipeBack:true //启用右滑关闭功能
+  });
+</script>
+</body>
+</html>
