@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+@@include('./part/head.html')
+<title>房源</title>
+<link rel="stylesheet" type="text/css" href="./css/cart.css">
+<body>
+  <header class="mui-bar mui-bar-nav">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="javascript:history.go(-1)"></a>
+    <h1 class="mui-title">订单详情</h1>
+  </header>
+  <div class="mui-content">
+    <div class="deal-done">
+      <h3>交易完成</h3>
+      <p>订单编号：11021201605200039</p>
+      <span>请您尽快至售楼处完成后续交易，如有问题请及时咨询。</span>
+    </div>
+
+    <div class="deal-done-adds bordered">
+      <a href=""><img src="./img/demo.jpg"></a>
+      <a href=""><img src="./img/demo.jpg"></a>
+    </div>
+    <div class="deal-done-adds">
+      <a href=""><img src="./img/demo.jpg"></a>
+      <a href=""><img src="./img/demo.jpg"></a>
+    </div>
+    <a class="more" href="">了解更多装修方案</a>
+  </div>
+@@include('./part/footer.html')
+<script>
+  mui.init({
+    swipeBack:true //启用右滑关闭功能
+  });
+</script>
+</body>
+</html>
