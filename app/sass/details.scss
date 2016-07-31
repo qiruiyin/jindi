@@ -17,6 +17,15 @@ $borderColor: #bbb;
 .building-desc {
 	margin: 15px;
 
+	h3 {
+		font-weight: bolder;
+		margin-top: 1em;
+	}
+
+	.msg {
+		text-indent: 2em;
+	}
+
 	.info {
 		p {
 			span {
@@ -49,6 +58,13 @@ $borderColor: #bbb;
 	}
 }
 
+.huxing-msg {
+	.mui-card-link {
+		margin-right: 1em;
+		color: $colorBlue;
+	}
+}
+
 .huxing-msg-state {
 	margin: 0 6px;
 	line-height: 30px;
@@ -57,6 +73,11 @@ $borderColor: #bbb;
 
 	li {
 		flex: 1;
+
+		span {
+			border: 1px solid $borderColor;
+			color: $colorRed;
+		}
 
 		&:last-child {
 			text-align: right;

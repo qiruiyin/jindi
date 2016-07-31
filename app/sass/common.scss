@@ -6,3 +6,27 @@
 .mui-card {
 	border: none;
 }
+
+.mui-bar {
+
+	.mui-tab-item {
+		border-left: 1px solid #fff;
+
+		&:first-child {
+			border-left: 0;
+		}
+	}
+}
+
+.bar-tab-red {
+	background-color: $colorRed;
+
+	.mui-tab-item {
+		color: #fff;
+
+		&.mui-active {
+			color: #fff;
+		}
+	}
+}
+

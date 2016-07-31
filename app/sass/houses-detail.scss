@@ -10,8 +10,15 @@
 }
 
 .houses-label {
+	position: relative;
 	line-height: 1.75;
 	padding: 10px;
+
+	.tel {
+		position: absolute;
+		right: 10px;
+		width: 60px;
+	}
 
 	.addr {
 		color: #000;
@@ -65,5 +72,16 @@
 }
 
 .houses-around {
-	margin: 0 10px;
+	margin: 0 10px 10px;
+	border-bottom: 0;
+
+	& > div {
+		font-size: 20px;
+		text-align: center;
+		display: flex;
+
+		a {
+			flex: 1;
+		}
+	}
 }

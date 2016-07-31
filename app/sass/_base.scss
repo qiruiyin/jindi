@@ -22,6 +22,9 @@ body {
 .color-yellow {
   color: $colorYellow;
 }
+.color-white {
+  color: #fff;
+}
 
 // 底部颜色
 .bg-red {
@@ -32,6 +35,16 @@ body {
   .mui-icon {
     color: #fff;
   }
+}
+
+.bg-white {
+  background-color: #fff;
+}
+.bg-yellow {
+  background-color: $colorYellow;
+}
+.bg-blue {
+  background-color: $colorBlue;
 }
 
 a {
@@ -47,7 +60,7 @@ p {
 }
 
 .mui-bar-tab .mui-tab-item.mui-active {
-	color: $colorGray;
+	color: $colorRed;
 }
 
 .mui-icon-back:before,
