@@ -22,10 +22,18 @@
   	height: 60px;
     padding-top: 10px;
   	padding-right: 60px;
-    color: #000;
+    color: $colorBlack;
 
     p {
       color: inherit;
+    }
+
+    .oper {
+      color: $colorRed;
+
+      span {
+        font-size: 20px;
+      }
     }
 
     .choosed {
@@ -83,7 +91,9 @@
     .share {
       position: absolute;
       right: 15px;
-      top: 0;
+      top: 8px;
+      color: $colorGray;
+      font-size: 26px;
     }
   }
 

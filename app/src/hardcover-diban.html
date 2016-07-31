@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+@@include('./part/head.html')
+<title>buy</title>
+<link rel="stylesheet" type="text/css" href="./css/hardcover.css">
+<body>
+  <header class="mui-bar mui-bar-nav">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="javascript:history.go(-1)"></a>
+    <h1 class="mui-title">地板</h1>
+  </header>
+  
+  <div class="mui-content">
+    <div class="image-text">
+      <img src="./img/demo.jpg">
+      <p>一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字</p>
+      <img src="./img/demo.jpg">
+      <span>图片名</span>
+      <img src="./img/demo.jpg">
+      <span>图片名</span>
+      <img src="./img/demo.jpg">
+      <span>图片名</span>
+    </div>
+  </div>
+@@include('./part/footer.html')
+<script src="./pkgs/mui/dist/js/mui.zoom.js"></script>
+<script src="./pkgs/mui/dist/js/mui.previewimage.js"></script>
+<script>
+  mui.init({
+    swipeBack:true //启用右滑关闭功能
+  });
+
+  mui.previewImage();
+  (function($) {
+
+  })(mui);
+</script>
+</body>
+</html>

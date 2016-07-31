@@ -22,10 +22,10 @@
 	
 	  span {
       line-height: 16px;
+      padding: 0 1em;
   	  display: inline-block;
   	  
   	  &:first-child {
-  	  	padding-right: 3px;
   	  	border-right: 2px solid #fff;
     	}
   	}
