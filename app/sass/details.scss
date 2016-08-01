@@ -27,6 +27,33 @@ $borderColor: #bbb;
 	}
 
 	.info {
+		&.mui-active {
+			margin-top: 0;
+			background: none;
+		}
+
+		&:after {
+			display: none;
+		}
+
+		& > a {
+			color: $colorBlue;
+			padding-left: 0;
+
+			span {
+				text-indent: 10px;
+			}
+
+			&:after {
+				display: none;
+			}
+		}
+
+		.mui-collapse-content {
+			margin-top: 0;
+			padding-left: 0;
+		}
+
 		p {
 			span {
 				&:first-child {
