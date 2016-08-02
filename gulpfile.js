@@ -183,7 +183,7 @@
 
 	// js、css、html压缩处理（可选）
 	// 打包到dist文件夹下
-	gulp.task('dist', ['image'], function(){
+	gulp.task('dist', function(){
 		return gulp.src('app/*.html')
 			.pipe($.plumber())
 			.pipe($.useref())
