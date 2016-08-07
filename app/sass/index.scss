@@ -2,11 +2,31 @@
 @import  'sandal/core';
 @import  'core/mixins', 'core/functions', 'core/vars';
 
-$borderIndex: #5c5b5c;
+$borderIndex: #000;
 
 .banner {
 	width: 100%;
 	min-height: 100px;
+}
+
+.bg-yellow {
+	background-color: #ffb70b;
+}
+.bg-blue {
+	background-color: #23428a;
+}
+.bg-red {
+	background-color: #c80000;
+}
+.bg-white {
+	background-color: #fff;
+}
+
+.color-blue {
+	color: $colorBlue;
+}
+.color-black {
+	color: $colorBlack;
 }
 
 section {
@@ -14,20 +34,56 @@ section {
 	border-top: 5px solid $borderIndex;
 
 	&:last-child {
-		border-bottom: 5px solid $borderIndex;
+		border-bottom: 4px solid $borderIndex;
 	}
 	
-	a {
+	& > a, & > div {
+		position: relative;
 		flex: 1;
-		// 此处的height可以由内部的img撑起
-		height: 140px; 
-		border-left: 5px solid $borderIndex;
-		text-align: center;
-		line-height: 140px;
+		border-left: 2px solid $borderIndex;
+		border-right: 2px solid $borderIndex;
 		color: inherit;
+		box-sizing: border-box;
 
-		&:first-child {
-			border-left-width: 0;
+		span {
+			position: absolute;
+			right: 10px;
+			bottom: 10px;
+			display: block;
+			color: #fff;
+		}
+	}
+}
+
+.section2 {
+	& > a  {
+		flex: 2;
+		border-right-width: 0;
+	}
+	& > div {
+		a {
+			position: relative;
+			display: block;
+			color: inherit;
+			box-sizing: border-box;
+			border-top: 2px solid $borderIndex;
+			border-left: 2px solid $borderIndex;
+
+			&:first-child {
+				border-bottom: 3px solid $borderIndex;
+				border-top-width: 0;
+			}
+			span {
+				color: #fff;
+			}
+		}
+	}
+}
+
+.section3 {
+	a {
+		&:last-child {
+			flex: 2;
 		}
 	}
 }
