@@ -1,0 +1,51 @@
+@charset 'utf-8';
+@import  'sandal/core';
+@import  'core/mixins', 'core/functions', 'core/vars';
+
+.neightbor-info {
+
+}
+
+.neighbor-info-header {
+	@extend %clearfix;
+
+	img {
+		float: left;
+		margin-right: 10px;
+		display: block;
+	}
+
+	.f-info {
+		float: left;
+		color: $colorBlack;
+
+		.f-date {
+			color: $colorGray;
+			display: block;
+		}
+	}
+}
+
+.neighbor-info-content {
+	padding-top: 10px;
+	color: $colorBlack;
+
+	& > h5, & > p {
+		color: $colorBlack;
+		line-height: 2;
+	}
+
+	.neighbor-info-img-3 {
+		margin-top: 10px;
+		display: flex;
+
+		img {
+			flex: 1;
+			margin-left: 10px;
+
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+	}
+}

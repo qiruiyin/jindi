@@ -1,3 +1,22 @@
 @charset 'utf-8';
 @import  'sandal/core';
 @import  'core/mixins', 'core/functions', 'core/vars';
+
+.mui-bar {
+	& > .mui-btn {
+		color: $colorRed;
+	}
+
+	.mui-title {
+		color: $colorRed;
+	}
+
+	.mui-bar-tab .mui-tab-item.mui-active {
+		color: $colorRed;
+	}
+
+	.mui-icon-back:before,
+	.mui-icon-left-nav:before {
+		color: $colorRed;
+	}
+}

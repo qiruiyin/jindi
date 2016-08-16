@@ -1,7 +1,7 @@
 @charset 'utf-8';
 @import 'sandal/core';
 @import 'core/mixins', 'core/functions', 'core/vars';
-@import 'base', 'image-text';
+@import 'base', 'image-text', 'header';
 
 .mui-card {
 	border: none;
