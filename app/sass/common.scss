@@ -30,3 +30,26 @@
 	}
 }
 
+.jindi-dialog {
+	line-height: 1.75;
+
+	.title {
+		font-size: 26px;
+	}
+
+	button, a {
+		border: 0;
+		width: 100%;
+		border-top: 1px solid #bbb;
+		border-radius: 0;
+		display: block;
+		line-height: 40px;
+		padding: 0;
+		color: inherit;
+
+		&:last-child {
+			border-bottom: 1px solid #bbb;
+		}
+	}
+}
+

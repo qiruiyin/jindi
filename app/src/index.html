@@ -9,7 +9,7 @@
     <h1 class="mui-title">金地积木</h1>
   </header>
   <nav class="mui-bar mui-bar-tab">
-    <a class="mui-tab-item mui-active" href="#">
+    <a class="mui-tab-item mui-active" href="index.html" onclick="alert(1);">
       <span class="mui-icon mui-icon-home"></span>
       <span class="mui-tab-label">首页</span>
     </a>
@@ -17,7 +17,7 @@
       <span class="mui-icon fa fa-circle-o"></span>
       <span class="mui-tab-label">邻里圈</span>
     </a>
-    <a class="mui-tab-item" href="#">
+    <a class="mui-tab-item" href="my.html">
       <span class="mui-icon fa fa-user"></span>
       <span class="mui-tab-label">我的</span>
     </a>
@@ -26,18 +26,22 @@
     <img src="./img/demo.jpg" class="banner">
 
     <section>
-      <a class="bg-white">G住G享</a>
-      <a class="bg-red color-white" href="hardcover.html">个性精装</a>
+      <a class="bg-yellow" href="hardcover.html"><img src="./img/index-img.png"><span class="color-black">个性精装</span></a>
+      <a class="bg-white"><img src="./img/index-img.png"><span class="color-blue">智慧出行</span></a>
+      <a class="bg-blue"><img src="./img/index-img.png"><span>G住G享</span></a>
     </section>
     
-    <section>
-      <a class="bg-yellow" href="buy.html">我要买房</a>
+    <section class="section2">
+      <a class="bg-blue" href="buy.html"><img src="./img/index-img.png"><span>我要买房</span></a>
+      <div>
+        <a class="bg-red"><img src="./img/index-img.png"><span>金地享家</span></a>
+        <a class="bg-yellow"><img src="./img/index-img.png"><span class="color-blue">智能家居</span></a>
+      </div>
     </section>
 
-    <section>
-      <a class="bg-red color-white">智慧出行</a>
-      <a class="bg-white">金地享家</a>
-      <a class="bg-blue color-white">智能家居</a>
+    <section class="section3">
+      <a class="bg-red"><img src="./img/index-img.png"><span>金地享家</span></a>
+      <a class="bg-yellow"><span>智能家居</span></a>
     </section>
   </div>
 @@include('./part/footer.html')

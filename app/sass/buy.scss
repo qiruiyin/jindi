@@ -53,7 +53,7 @@
   	align-items: center;
     text-align: center;
 
-	  & > div {
+	  & > div, & > .add-cart {
 		  flex: 1;
       border-left: 1px solid $borderColor;
       border-bottom: 1px solid $borderColor;
@@ -106,6 +106,7 @@
     line-height: 1;
     color: $colorRed;
     text-align: center;
+    display: block;
     
     i {
       margin: 0 auto;
