@@ -2,6 +2,39 @@
 @import  'sandal/core';
 @import  'core/mixins', 'core/functions', 'core/vars';
 
+.proj-posts {
+	position: relative;
+	padding: 10px 20px;
+	// background: url("../img/demo.jpg") no-repeat;
+	line-height: 1.75;
+	
+	.proj-posts-info > span {
+		padding: 0 10px 0 0;
+		display: inline-block;
+	}
+
+	& > a {
+		display: block;
+	}
+
+	& > .sign {
+		width: 70px;
+		text-align: center;
+		background-color: yellow;
+
+		& > i {
+			margin-right: 4px;
+		}
+	}
+
+	.weather {
+		position: absolute;
+		top: 40px;
+		right: 20px;
+		line-height: 1.5;
+	}
+}
+
 .neightbor-info {
 
 }
