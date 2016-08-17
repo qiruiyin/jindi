@@ -1,0 +1,68 @@
+@charset 'utf-8';
+@import 'sandal/core';
+@import 'core/mixins', 'core/functions', 'core/vars';
+
+
+.personality {
+	
+}
+
+.personality-title {
+	line-height: 50px;
+	text-indent: 15px;
+	border-bottom: 1px solid #bbb;
+}
+
+.personality-list {
+	margin: 20px 15px 0;
+}
+
+.personality-big {
+	@extend %clearfix;
+
+	img {
+		float: left;
+		margin-right: 15px;
+		display: block;
+	}
+}
+
+.personality-small {
+	margin-top: 15px;
+	line-height: 40px;
+	@extend %clearfix;
+
+	label {
+		float: left;
+		margin-right: 20px;
+	}
+
+	ul {
+		display: flex;
+
+		li {
+			position: relative;
+			width: 40px;
+			height: 40px;
+			margin-right: 6px;
+
+			&.active {
+				&:before {
+					content: "\f058";
+					position: absolute;
+					width: 40px;
+					height: 40px;
+					background: rgba(0, 0, 0, .5);
+					color: #fab54d;
+					font: normal normal normal 14px/1 FontAwesome;
+				  font-size: 16px;
+				  text-align: center;
+				  line-height: 40px;
+				  text-rendering: auto;
+				  -webkit-font-smoothing: antialiased;
+				  -moz-osx-font-smoothing: grayscale;
+				}
+			}
+		}
+	}
+}

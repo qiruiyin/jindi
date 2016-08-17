@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+@@include('./part/head.html')
+<title>个性定制</title>
+<body>
+  <header class="mui-bar mui-bar-nav">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="javascript:history.go(-1)"></a>
+    <h1 class="mui-title">个性定制</h1>
+  </header>
+  <nav class="mui-bar mui-bar-tab">
+    <a class="mui-tab-item mui-active" href="cart.html">
+      <span class="mui-icon mui-icon-home"></span>
+      <span class="mui-tab-label">我要这样装</span>
+    </a>
+  </nav>
+  <div class="mui-content">
+    <img src="./img/demo.jpg">
+    <div class="personality">
+      <div class="personality-title">开启你的定制之旅</div>
+      <section class="personality-list">
+        <div class="personality-big">
+          <img src="./img/personality/floor1.png">
+          <label>地板</label>
+        </div>
+        <div class="personality-small">
+          <label>颜色</label>
+          <ul>
+            <li class="active"><img src="./img/personality/floor1.png"></li>
+            <li><img src="./img/personality/floor2.png"></li>
+            <li><img src="./img/personality/floor1.png"></li>
+            <li><img src="./img/personality/floor2.png"></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <div class="personality">
+      <div class="personality-title">开启你的定制之旅</div>
+      <section class="personality-list">
+        <div class="personality-big">
+          <img src="./img/personality/floor1.png">
+          <label>地板</label>
+        </div>
+        <div class="personality-small">
+          <label>颜色</label>
+          <ul>
+            <li class="active"><img src="./img/personality/floor1.png"></li>
+            <li><img src="./img/personality/floor2.png"></li>
+            <li><img src="./img/personality/floor1.png"></li>
+            <li><img src="./img/personality/floor2.png"></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <div class="personality">
+      <div class="personality-title">开启你的定制之旅</div>
+      <section class="personality-list">
+        <div class="personality-big">
+          <img src="./img/personality/floor1.png">
+          <label>地板</label>
+        </div>
+        <div class="personality-small">
+          <label>颜色</label>
+          <ul>
+            <li class="active"><img src="./img/personality/floor1.png"></li>
+            <li><img src="./img/personality/floor2.png"></li>
+            <li><img src="./img/personality/floor1.png"></li>
+            <li><img src="./img/personality/floor2.png"></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <div class="personality">
+      <div class="personality-title">开启你的定制之旅</div>
+      <section class="personality-list">
+        <div class="personality-big">
+          <img src="./img/personality/floor1.png">
+          <label>地板</label>
+        </div>
+        <div class="personality-small">
+          <label>颜色</label>
+          <ul>
+            <li class="active"><img src="./img/personality/floor1.png"></li>
+            <li><img src="./img/personality/floor2.png"></li>
+            <li><img src="./img/personality/floor1.png"></li>
+            <li><img src="./img/personality/floor2.png"></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <div class="personality">
+      <div class="personality-title">开启你的定制之旅</div>
+      <section class="personality-list">
+        <div class="personality-big">
+          <img src="./img/personality/floor1.png">
+          <label>地板</label>
+        </div>
+        <div class="personality-small">
+          <label>颜色</label>
+          <ul>
+            <li class="active"><img src="./img/personality/floor1.png"></li>
+            <li><img src="./img/personality/floor2.png"></li>
+            <li><img src="./img/personality/floor1.png"></li>
+            <li><img src="./img/personality/floor2.png"></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </div>
+@@include('./part/footer.html')
+<script>
+  mui.init({
+    swipeBack:true //启用右滑关闭功能
+  });
+  $(".personality-small ul").find("li").on("touchend", function(){
+    var img_src = $(this).find("img").attr("src");
+    $(this).siblings().removeClass("active");
+    $(this).addClass("active");
+    $(this).parents(".personality-list").find(".personality-big img").attr("src", img_src);
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+@@include('./part/head.html')
+<title>个性定制</title>
+<style type="text/css">
+.personality-big:after,.personality-big:before,.personality-small:after,.personality-small:before{content:"";display:table}.personality-big:after,.personality-small:after{clear:both}.personality-title{line-height:50px;text-indent:15px;border-bottom:1px solid #bbb}.personality-list{margin:20px 15px 0}.personality-big img{float:left;margin-right:15px;display:block}.personality-small{margin-top:15px;line-height:40px}.personality-small label{float:left;margin-right:20px}.personality-small ul{display:-webkit-box;display:-ms-flexbox;display:flex}.personality-small ul li{position:relative;width:40px;height:40px;margin-right:6px}.personality-small ul li.active:before{content:"\f058";position:absolute;width:40px;height:40px;background:rgba(0,0,0,.5);color:#fab54d;font:normal normal normal 14px/1 FontAwesome;font-size:1pc;text-align:center;line-height:40px;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+</style>
+<body>
+  <header class="mui-bar mui-bar-nav">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="javascript:history.go(-1)"></a>
+    <h1 class="mui-title">个性定制</h1>
+  </header>
+  <nav class="mui-bar mui-bar-tab">
+    <a class="mui-tab-item mui-active" href="cart.html">
+      <span class="mui-icon mui-icon-home"></span>
+      <span class="mui-tab-label">我要这样装</span>
+    </a>
+  </nav>
+  <div class="mui-content">
+    <img class="img" src="./img/personality/personality.png">
+    <div class="personality">
+      <div class="personality-title">开启你的定制之旅</div>
+      <section class="personality-list">
+        <div class="personality-big">
+          <img src="./img/personality/floor1.png">
+          <label>地板</label>
+        </div>
+        <div class="personality-small">
+          <label>颜色</label>
+          <ul>
+            <li class="active"><img src="./img/personality/floor1.png"></li>
+            <li><img src="./img/personality/floor2.png"></li>
+            <li><img src="./img/personality/floor1.png"></li>
+            <li><img src="./img/personality/floor2.png"></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <div class="personality">
+      <div class="personality-title">开启你的定制之旅</div>
+      <section class="personality-list">
+        <div class="personality-big">
+          <img src="./img/personality/floor1.png">
+          <label>地板</label>
+        </div>
+        <div class="personality-small">
+          <label>颜色</label>
+          <ul>
+            <li class="active"><img src="./img/personality/floor1.png"></li>
+            <li><img src="./img/personality/floor2.png"></li>
+            <li><img src="./img/personality/floor1.png"></li>
+            <li><img src="./img/personality/floor2.png"></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <div class="personality">
+      <div class="personality-title">开启你的定制之旅</div>
+      <section class="personality-list">
+        <div class="personality-big">
+          <img src="./img/personality/floor1.png">
+          <label>地板</label>
+        </div>
+        <div class="personality-small">
+          <label>颜色</label>
+          <ul>
+            <li class="active"><img src="./img/personality/floor1.png"></li>
+            <li><img src="./img/personality/floor2.png"></li>
+            <li><img src="./img/personality/floor1.png"></li>
+            <li><img src="./img/personality/floor2.png"></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <div class="personality">
+      <div class="personality-title">开启你的定制之旅</div>
+      <section class="personality-list">
+        <div class="personality-big">
+          <img src="./img/personality/floor1.png">
+          <label>地板</label>
+        </div>
+        <div class="personality-small">
+          <label>颜色</label>
+          <ul>
+            <li class="active"><img src="./img/personality/floor1.png"></li>
+            <li><img src="./img/personality/floor2.png"></li>
+            <li><img src="./img/personality/floor1.png"></li>
+            <li><img src="./img/personality/floor2.png"></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <div class="personality">
+      <div class="personality-title">开启你的定制之旅</div>
+      <section class="personality-list">
+        <div class="personality-big">
+          <img src="./img/personality/floor1.png">
+          <label>地板</label>
+        </div>
+        <div class="personality-small">
+          <label>颜色</label>
+          <ul>
+            <li class="active"><img src="./img/personality/floor1.png"></li>
+            <li><img src="./img/personality/floor2.png"></li>
+            <li><img src="./img/personality/floor1.png"></li>
+            <li><img src="./img/personality/floor2.png"></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </div>
+@@include('./part/footer.html')
+<script>
+  mui.init({
+    swipeBack:true //启用右滑关闭功能
+  });
+  $(".personality-small ul").find("li").on("touchend", function(){
+    var img_src = $(this).find("img").attr("src");
+    $(this).siblings().removeClass("active");
+    $(this).addClass("active");
+    $(this).parents(".personality-list").find(".personality-big img").attr("src", img_src);
+  });
+</script>
+</body>
+</html>
