@@ -12,19 +12,19 @@
     <ul id="list" class="mui-table-view mui-table-view-chevron">
       <li class="mui-table-view-cell">
         <a class="mui-navigate-right" href="examples/accordion.html">
-          <span class="neightbor-top">置顶</span>
+          <span class="neighbor-top">置顶</span>
           #话题讨论#小区流浪狗较多如何解决
         </a>
       </li>
       <li class="mui-table-view-cell">
         <a class="mui-navigate-right" href="examples/accordion.html">
-          <span class="neightbor-top">置顶</span>
+          <span class="neighbor-top">置顶</span>
           #话题讨论#小区流浪狗较多如何解决
         </a>
       </li>
       <li class="mui-table-view-cell">
         <a class="mui-navigate-right" href="examples/accordion.html">
-          <span class="neightbor-top">置顶</span>
+          <span class="neighbor-top">置顶</span>
           #话题讨论#小区流浪狗较多如何解决
         </a>
       </li>
@@ -36,76 +36,52 @@
           <li class="mui-table-view-cell">
             <div class="neighbor-info">
               <div class="neighbor-info-header">
-                <img src="./img/neightbor/header.png">
+                <img src="./img/neighbor/header.png">
                 <div class="f-info">
-                  <span class="f-nick">物业</span>
-                  <span class="f-date">28分钟前</span>
+                  <div class="f-nick">金馆长对金馆长</div>
+                  <div class="f-info-others">28分钟前</div>
                 </div>
               </div>
               <div class="neighbor-info-content">
-                <h5>停水通知</h5>
+                <h5>#邻里活动#密室逃脱</h5>
                 <div class="activity-block">
-                  <img src="">
+                  <img src="./img/neighbor/img.jpg">
                   <div class="activity-block-info">
-                    <p>7月3日 14:00-16：00</p>
-                    <p>杨浦区国定东路200号</p>
-                    <p>报名人数：19</p>
+                    <p><i class="fa fa-clock-o"></i>7月3日 14:00-16：00</p>
+                    <p><i class="fa fa-map-marker"></i>杨浦区国定东路200号</p>
+                    <p><i class="fa fa-group"></i>报名人数：19</p>
                   </div>
                 </div>
               </div>
-            </div>
-          </li>
-          <li class="mui-table-view-cell">
-            <div class="neighbor-info">
-              <div class="neighbor-info-header">
-                <img src="./img/neightbor/header.png">
-                <div class="f-info">
-                  <span class="f-nick">物业</span>
-                  <span class="f-date">28分钟前</span>
-                </div>
-              </div>
-              <div class="neighbor-info-content">
-                <h5>停水通知</h5>
-                <p>小区自来水管道维修，与6月28日停水一天</p>
-                <div class="neighbor-info-img-3">
-                  <img src="./img/neightbor/mao.png">
-                </div>
+              <div class="neighbor-info-footer">
+                <div class="neighbor-infolike"><i class="fa fa-thumbs-o-up"></i><span>10</span></div>
+                <a class="neighbor-infocomment" href="comment.html"><i class="fa fa-comment-o"></i><span>10</span></a>
               </div>
             </div>
           </li>
           <li class="mui-table-view-cell">
             <div class="neighbor-info">
               <div class="neighbor-info-header">
-                <img src="./img/neightbor/header.png">
+                <img src="./img/neighbor/header.png">
                 <div class="f-info">
-                  <span class="f-nick">物业</span>
-                  <span class="f-date">28分钟前</span>
+                  <div class="f-nick">金馆长对金馆长</div>
+                  <div class="f-info-others">28分钟前</div>
                 </div>
               </div>
               <div class="neighbor-info-content">
-                <h5>停水通知</h5>
-                <p>小区自来水管道维修，与6月28日停水一天</p>
-                <div class="neighbor-info-img-3">
-                  <img src="./img/neightbor/mao.png">
+                <h5>#邻里活动#密室逃脱</h5>
+                <div class="activity-block">
+                  <img src="./img/neighbor/img.jpg">
+                  <div class="activity-block-info">
+                    <p><i class="fa fa-clock-o"></i>7月3日 14:00-16：00</p>
+                    <p><i class="fa fa-map-marker"></i>杨浦区国定东路200号</p>
+                    <p><i class="fa fa-group"></i>报名人数：19</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </li>
-          <li class="mui-table-view-cell">
-            <div class="neighbor-info">
-              <div class="neighbor-info-header">
-                <img src="./img/neightbor/header.png">
-                <div class="f-info">
-                  <span class="f-nick">物业</span>
-                  <span class="f-date">28分钟前</span>
-                </div>
-              </div>
-              <div class="neighbor-info-content">
-                <h5>停水通知</h5>
-                <p>小区自来水管道维修，与6月28日停水一天</p>
-                <div class="neighbor-info-img-3">
-                  <img src="./img/neightbor/mao.png">
-                </div>
+              <div class="neighbor-info-footer">
+                <div class="neighbor-infolike"><i class="fa fa-thumbs-o-up"></i><span>10</span></div>
+                <a class="neighbor-infocomment" href="comment.html"><i class="fa fa-comment-o"></i><span>10</span></a>
               </div>
             </div>
           </li>
@@ -158,18 +134,23 @@
     var li;
     var html = '<div class="neighbor-info">'
                 + '<div class="neighbor-info-header">'
-                  + '<img src="./img/neightbor/header.png">'
+                  + '<img src="./img/neighbor/header.png">'
                   + '<div class="f-info">'
-                    + '<span class="f-nick">物业</span>'
-                    + '<span class="f-date">28分钟前</span>'
+                    + '<div class="f-nick">金馆长对金馆长</div>'
+                    + '<div class="f-info-others">28分钟前</div>'
                   + '</div>'
                 + '</div>'
-                + '<div class="neighbor-info-content">'
-                  + '<h5>停水通知</h5>'
-                  + '<p>小区自来水管道维修，与6月28日停水一天</p>'
-                  + '<div class="neighbor-info-img-3">'
-                    + '<img src="./img/neightbor/mao.png">'
+                + '<div class="activity-block">'
+                  + '<img src="./img/neighbor/img.jpg">'
+                  + '<div class="activity-block-info">'
+                    + '<p><i class="fa fa-clock-o"></i>7月3日 14:00-16：00</p>'
+                    + '<p><i class="fa fa-map-marker"></i>杨浦区国定东路200号</p>'
+                    + '<p><i class="fa fa-group"></i>报名人数：19</p>'
                   + '</div>'
+                + '</div>'
+                + '<div class="neighbor-info-footer">'
+                  + '<div class="neighbor-infolike"><i class="fa fa-thumbs-o-up"></i><span>10</span></div>'
+                  + '<a class="neighbor-infocomment" href="comment.html"><i class="fa fa-comment-o"></i><span>10</span></a>'
                 + '</div>'
               + '</div>';
     for (var i = 0; i < count; i++) {

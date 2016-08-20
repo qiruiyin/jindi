@@ -37,14 +37,15 @@
 	}
 	.oper-btn {
 		position: absolute;
-    right: 0;
-    top: 0;
-    width: 5em;
-    height: 100%;
-    line-height: 85px;
-    background: $colorRed;
-    text-align: center;
-    color: #fff;
+	    right: 0;
+	    top: 0;
+	    width: 5em;
+	    height: 100%;
+	    line-height: 85px;
+	    background: $colorRed;
+	    text-align: center;
+	    color: #fff;
+	    display: none;
 	}
 }
 
@@ -156,4 +157,8 @@
 	margin-top: 1em;
 	color: $colorBlue;
 	display: block;
+}
+
+.mui-checkbox input[type=checkbox]:checked:before, .mui-radio input[type=radio]:checked:before {
+	color: $colorRed;
 }

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+@@include('./part/head.html')
+<title>评论</title>
+<link rel="stylesheet" type="text/css" href="./css/neighbor.css">
+<body>
+  <header id="header" class="mui-bar mui-bar-nav">  
+    <h1 class="mui-title">评论</h1>
+    <a class="mui-action-back mui-btn mui-btn-blue mui-btn-link mui-btn-nav mui-pull-left" href=""><span class="mui-icon mui-icon-left-nav"></span></a>
+  </header>
+  
+  <div class="mui-content">
+    <div class="jindi-comment">
+      <textarea placeholder="说说你的看法"></textarea>
+      <button type="button">发表</button>
+    </div>
+    
+    <div id="scroll">
+      <div class="mui-scroll" style="background: #fff;">
+        <ul class="mui-table-view">
+          <li class="mui-table-view-cell">
+            <div class="neighbor-info">
+              <div class="neighbor-info-header">
+                <img src="./img/neighbor/header.png">
+                <div class="f-info">
+                  <div class="f-nick">骑猪看日出</div>
+                  <div class="f-info-others">第二楼 20160630</div>
+                </div>
+                <a class="comment" href=""></a>
+              </div>
+              <div class="neighbor-info-content">
+                <p>沙发</p>
+              </div>
+              <div class="neighbor-info-footer">
+                <p>共2条回复</p>
+              </div>
+            </div>
+          </li>
+          <li class="mui-table-view-cell">
+            <div class="neighbor-info">
+              <div class="neighbor-info-header">
+                <img src="./img/neighbor/header.png">
+                <div class="f-info">
+                  <div class="f-nick">骑猪看日出</div>
+                  <div class="f-info-others">第二楼 20160630</div>
+                </div>
+                <a class="comment" href=""></a>
+              </div>
+              <div class="neighbor-info-content">
+                <p>沙发</p>
+              </div>
+              <div class="neighbor-info-footer">
+                <p>共2条回复</p>
+              </div>
+            </div>
+          </li>
+          <li class="mui-table-view-cell">
+            <div class="neighbor-info">
+              <div class="neighbor-info-header">
+                <img src="./img/neighbor/header.png">
+                <div class="f-info">
+                  <div class="f-nick">骑猪看日出</div>
+                  <div class="f-info-others">第二楼 20160630</div>
+                </div>
+                <a class="comment" href=""></a>
+              </div>
+              <div class="neighbor-info-content">
+                <p>沙发</p>
+              </div>
+              <div class="neighbor-info-footer">
+                <p>共2条回复</p>
+              </div>
+            </div>
+          </li>
+          <li class="mui-table-view-cell">
+            <div class="neighbor-info">
+              <div class="neighbor-info-header">
+                <img src="./img/neighbor/header.png">
+                <div class="f-info">
+                  <div class="f-nick">骑猪看日出</div>
+                  <div class="f-info-others">第二楼 20160630</div>
+                </div>
+                <a class="comment" href=""></a>
+              </div>
+              <div class="neighbor-info-content">
+                <p>沙发</p>
+              </div>
+              <div class="neighbor-info-footer">
+                <p>共2条回复</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+@@include('./part/footer.html')
+
+<script src="./pkgs/mui/dist/js/mui.pullToRefresh.js"></script>
+<script src="./pkgs/mui/dist/js/mui.pullToRefresh.material.js"></script>
+<script>
+  mui.init({
+    swipeBack:true //启用右滑关闭功能
+  });
+
+  var deceleration = mui.os.ios?0.001:0.0001;
+  mui('#scroll').scroll({
+    bounce: false,
+    indicators: true, //是否显示滚动条
+    deceleration:deceleration
+  });
+  $.each(document.querySelectorAll('#scroll .mui-scroll'), function(index, pullRefreshEl) {
+    mui(pullRefreshEl).pullToRefresh({
+      down: {
+        callback: function() {
+          var self = this;
+          setTimeout(function() {
+            var ul = self.element.querySelector('.mui-table-view');
+            ul.insertBefore(createFragment(ul, index, 10, true), ul.firstChild);
+            self.endPullDownToRefresh();
+          }, 1000);
+        }
+      },
+      up: {
+        callback: function() {
+          var self = this;
+          setTimeout(function() {
+            var ul = self.element.querySelector('.mui-table-view');
+            ul.appendChild(createFragment(ul, index, 5));
+            self.endPullUpToRefresh();
+          }, 1000);
+        }
+      }
+    });
+  });
+  var createFragment = function(ul, index, count, reverse) {
+    var length = ul.querySelectorAll('li').length;
+    var fragment = document.createDocumentFragment();
+    var li;
+    var html = '<div class="neighbor-info">'
+                + '<div class="neighbor-info-header">'
+                  + '<img src="./img/neighbor/header.png">'
+                  + '<div class="f-info">'
+                    + '<div class="f-nick">骑猪看日出</div>'
+                    + '<div class="f-info-others">第二楼 20160630</div>'
+                  + '</div>'
+                + '</div>'
+                + '<div class="neighbor-info-content">'
+                  + '<p>沙发</p>'
+                + '</div>'
+                + '<div class="neighbor-info-footer">'
+                  + '<p>共2条回复</p>'
+                + '</div>'
+              + '</div>';
+    for (var i = 0; i < count; i++) {
+      li = document.createElement('li');
+      li.className = 'mui-table-view-cell';
+      li.innerHTML = html;
+      fragment.appendChild(li);
+    }
+    return fragment;
+  };
+</script>
+</body>
+</html>

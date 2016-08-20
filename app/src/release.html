@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+@@include('./part/head.html')
+<title>发布</title>
+<link rel="stylesheet" type="text/css" href="./css/neighbor.css">
+<body>
+  <header class="mui-bar mui-bar-nav">
+    <a class="mui-icon mui-icon-back" href="####"></a>
+    <button class="mui-btn mui-btn-blue mui-btn-link mui-pull-right">发布<span class="mui-icon mui-icon-plusempty"></span></button>
+  </header>
+
+  <div class="mui-content release">
+    <ul class="mui-table-view">
+      <li class="mui-table-view-cell">
+        <textarea placeholder="有什么想分享给大家，说说看"></textarea>
+      </li>
+      <li class="mui-table-view-cell">
+        <div class="add-img">
+          <p>还能添加12张图片</p>
+          <img src="./img/neighbor/add-btn.jpg">
+          <input type="file" name="">
+        </div>
+      </li>
+      <li class="mui-table-view-cell">
+        <a class="mui-navigate-right location fa fa-map-marker">显示所在位置</a>
+      </li>
+    </ul>
+  </div>
+@@include('./part/footer.html')
+</body>
+</html>

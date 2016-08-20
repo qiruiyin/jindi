@@ -1,36 +1,68 @@
 <!DOCTYPE html>
 <html>
 @@include('./part/head.html')
-<title>便民信息</title>
+<title>活动</title>
 <link rel="stylesheet" type="text/css" href="./css/neighbor.css">
 <body>
   <header class="mui-bar mui-bar-nav">
     <a class="mui-icon mui-icon-back" href="####"></a>
-    <h1 class="mui-title">便民信息</h1>
+    <h1 class="mui-title">活动</h1>
+    <button class="mui-btn mui-btn-blue mui-btn-link mui-pull-right">分享<span class="fa fa-ellipsis-h"></span></button>
   </header>
-  <div class="mui-content">
-    <ul id="list" class="mui-table-view mui-table-view-chevron">
-      <li class="mui-table-view-cell">
-        <a class="mui-navigate-right" href="examples/accordion.html">
-          <span class="neighbor-top">置顶</span>
-          #话题讨论#小区流浪狗较多如何解决
-        </a>
-      </li>
-      <li class="mui-table-view-cell">
-        <a class="mui-navigate-right" href="examples/accordion.html">
-          <span class="neighbor-top">置顶</span>
-          #话题讨论#小区流浪狗较多如何解决
-        </a>
-      </li>
-      <li class="mui-table-view-cell">
-        <a class="mui-navigate-right" href="examples/accordion.html">
-          <span class="neighbor-top">置顶</span>
-          #话题讨论#小区流浪狗较多如何解决
-        </a>
-      </li>
-    </ul>
 
-    <div id="scroll1">
+  <nav class="mui-bar mui-bar-tab align-right">
+    <a class="activity-namelist" href="name-list.html">活动名单</a>
+    <div class="bar-info-like"><i class="fa fa-thumbs-o-up"></i><span>10</span></div>
+    <a class="bar-info-comment" href="comment.html"><i class="fa fa-comment-o"></i><span>10</span></a>
+  </nav>
+
+  <div class="mui-content">
+    <div class="neighbor-info">
+      <div class="neighbor-info-header">
+        <img src="./img/neighbor/header.png">
+        <div class="f-info">
+          <div class="f-nick">金馆长对金馆长</div>
+          <div class="f-info-others">楼主</div>
+        </div>
+      </div>
+      <div class="neighbor-info-content">
+        <h5>#邻里活动#密室逃脱</h5>
+        <div class="activity-block">
+          <img src="./img/neighbor/img.jpg">
+          <div class="activity-block-info">
+            <p><i class="fa fa-clock-o"></i>7月3日 14:00-16：00</p>
+            <p><i class="fa fa-map-marker"></i>杨浦区国定东路200号</p>
+            <p><i class="fa fa-group"></i>报名人数：19</p>
+
+            <a class="mui-btn mui-btn-danger mui-btn-outlined" href="name-list.html">我要报名</a>
+          </div>
+        </div>
+
+        <div class="activity-block-1">
+          <h5>活动图片</h5>
+          <div class="activity-block-1-img">
+            <img src="./img/neighbor/img1.jpg">
+            <img src="./img/neighbor/img1.jpg">
+            <img src="./img/neighbor/img1.jpg">  
+          </div>
+        </div>
+        <div class="activity-block-1">
+          <h5>活动介绍</h5>
+          <p>在上海密室逃脱圈子中，资格比X先生还老。最近出现的两个主题，从场景布置和机关上还是有亮点的。喜欢找东西的，推荐盗墓笔记，场景蛮好的</p>
+        </div>
+
+        <ul class="mui-table-view"> 
+          <li class="mui-table-view-cell mui-collapse">
+            <a class="mui-navigate-right" href="#">展开更多</a>
+            <div class="mui-collapse-content">
+              <p>在上海密室逃脱圈子中，资格比X先生还老。最近出现的两个主题，从场景布置和机关上还是有亮点的。喜欢找东西的，推荐盗墓笔记，场景蛮好的</p>
+            </div>
+          </li>
+          </ul>
+      </div>
+    </div>
+
+    <div id="scroll">
       <div class="mui-scroll" style="background: #fff;">
         <ul class="mui-table-view">
           <li class="mui-table-view-cell">
@@ -38,20 +70,16 @@
               <div class="neighbor-info-header">
                 <img src="./img/neighbor/header.png">
                 <div class="f-info">
-                  <div class="f-nick">物业</div>
-                  <div class="f-info-others">28分钟前</div>
+                  <div class="f-nick">骑猪看日出</div>
+                  <div class="f-info-others">第二楼 20160630</div>
                 </div>
+                <a class="comment" href="comment.html"></a>
               </div>
               <div class="neighbor-info-content">
-                <h5>停水通知</h5>
-                <p>小区自来水管道维修，与6月28日停水一天</p>
-                <div class="neighbor-info-img-3">
-                  <img src="./img/neighbor/mao.png">
-                </div>
+                <p>沙发</p>
               </div>
               <div class="neighbor-info-footer">
-                <div class="neighbor-infolike"><i class="fa fa-thumbs-o-up"></i><span>10</span></div>
-                <a class="neighbor-infocomment" href="comment.html"><i class="fa fa-comment-o"></i><span>10</span></a>
+                <p>共2条回复</p>
               </div>
             </div>
           </li>
@@ -60,20 +88,16 @@
               <div class="neighbor-info-header">
                 <img src="./img/neighbor/header.png">
                 <div class="f-info">
-                  <div class="f-nick">物业</div>
-                  <div class="f-info-others">28分钟前</div>
+                  <div class="f-nick">骑猪看日出</div>
+                  <div class="f-info-others">第二楼 20160630</div>
                 </div>
+                <a class="comment" href="comment.html"></a>
               </div>
               <div class="neighbor-info-content">
-                <h5>停水通知</h5>
-                <p>小区自来水管道维修，与6月28日停水一天</p>
-                <div class="neighbor-info-img-3">
-                  <img src="./img/neighbor/mao.png">
-                </div>
+                <p>沙发</p>
               </div>
               <div class="neighbor-info-footer">
-                <div class="neighbor-infolike"><i class="fa fa-thumbs-o-up"></i><span>10</span></div>
-                <a class="neighbor-infocomment" href="comment.html"><i class="fa fa-comment-o"></i><span>10</span></a>
+                <p>共2条回复</p>
               </div>
             </div>
           </li>
@@ -82,20 +106,16 @@
               <div class="neighbor-info-header">
                 <img src="./img/neighbor/header.png">
                 <div class="f-info">
-                  <div class="f-nick">物业</div>
-                  <div class="f-info-others">28分钟前</div>
+                  <div class="f-nick">骑猪看日出</div>
+                  <div class="f-info-others">第二楼 20160630</div>
                 </div>
+                <a class="comment" href="comment.html"></a>
               </div>
               <div class="neighbor-info-content">
-                <h5>停水通知</h5>
-                <p>小区自来水管道维修，与6月28日停水一天</p>
-                <div class="neighbor-info-img-3">
-                  <img src="./img/neighbor/mao.png">
-                </div>
+                <p>沙发</p>
               </div>
               <div class="neighbor-info-footer">
-                <div class="neighbor-infolike"><i class="fa fa-thumbs-o-up"></i><span>10</span></div>
-                <a class="neighbor-infocomment" href="comment.html"><i class="fa fa-comment-o"></i><span>10</span></a>
+                <p>共2条回复</p>
               </div>
             </div>
           </li>
@@ -104,20 +124,16 @@
               <div class="neighbor-info-header">
                 <img src="./img/neighbor/header.png">
                 <div class="f-info">
-                  <div class="f-nick">物业</div>
-                  <div class="f-info-others">28分钟前</div>
+                  <div class="f-nick">骑猪看日出</div>
+                  <div class="f-info-others">第二楼 20160630</div>
                 </div>
+                <a class="comment" href="comment.html"></a>
               </div>
               <div class="neighbor-info-content">
-                <h5>停水通知</h5>
-                <p>小区自来水管道维修，与6月28日停水一天</p>
-                <div class="neighbor-info-img-3">
-                  <img src="./img/neighbor/mao.png">
-                </div>
+                <p>沙发</p>
               </div>
               <div class="neighbor-info-footer">
-                <div class="neighbor-infolike"><i class="fa fa-thumbs-o-up"></i><span>10</span></div>
-                <a class="neighbor-infocomment" href="comment.html"><i class="fa fa-comment-o"></i><span>10</span></a>
+                <p>共2条回复</p>
               </div>
             </div>
           </li>
@@ -135,12 +151,12 @@
   });
 
   var deceleration = mui.os.ios?0.001:0.0001;
-  mui('#scroll1').scroll({
+  mui('#scroll').scroll({
     bounce: false,
     indicators: true, //是否显示滚动条
     deceleration:deceleration
   });
-  $.each(document.querySelectorAll('#scroll1 .mui-scroll'), function(index, pullRefreshEl) {
+  $.each(document.querySelectorAll('#scroll .mui-scroll'), function(index, pullRefreshEl) {
     mui(pullRefreshEl).pullToRefresh({
       down: {
         callback: function() {
@@ -172,20 +188,15 @@
                 + '<div class="neighbor-info-header">'
                   + '<img src="./img/neighbor/header.png">'
                   + '<div class="f-info">'
-                    + '<div class="f-nick">物业</div>'
-                    + '<div class="f-info-others">28分钟前</div>'
+                    + '<div class="f-nick">骑猪看日出</div>'
+                    + '<div class="f-info-others">第二楼 20160630</div>'
                   + '</div>'
                 + '</div>'
                 + '<div class="neighbor-info-content">'
-                  + '<h5>停水通知</h5>'
-                  + '<p>小区自来水管道维修，与6月28日停水一天</p>'
-                  + '<div class="neighbor-info-img-3">'
-                    + '<img src="./img/neighbor/mao.png">'
-                  + '</div>'
+                  + '<p>沙发</p>'
                 + '</div>'
                 + '<div class="neighbor-info-footer">'
-                  + '<div class="neighbor-infolike"><i class="fa fa-thumbs-o-up"></i><span>10</span></div>'
-                  + '<a class="neighbor-infocomment" href="comment.html"><i class="fa fa-comment-o"></i><span>10</span></a>'
+                  + '<p>共2条回复</p>'
                 + '</div>'
               + '</div>';
     for (var i = 0; i < count; i++) {
