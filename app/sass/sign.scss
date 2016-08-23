@@ -1,0 +1,80 @@
+@charset 'utf-8';
+@import  'sandal/core';
+@import  'core/mixins', 'core/functions', 'core/vars';
+
+.sign-person {
+	@extend %clearfix;
+	padding: 15px;
+
+	.sign-person-left {
+		float: left;
+	}
+
+	.sign-person-right {
+		float: right;
+		line-height: 20px;
+		
+		.sign-times {
+			margin-top: 4px;
+		}
+
+		span {
+			margin-left: 10px;
+			font-size: 18px;
+		}
+	}
+}
+
+.sign-calendar {
+	display: flex;
+
+	.month-btn {
+		width: 40px;
+		padding: 16px 0;
+		text-align: center;
+		
+		& > div {
+			width: 40px;
+			padding: 15px 0;
+		}
+		& > span {
+			display: block;
+		}
+	}
+	.calendar {
+		flex: 1;
+	}
+	table {
+		width: 100%;
+		text-align: center;
+
+		td {
+			span {
+				width: 30px;
+				height: 30px;
+				line-height: 30px;
+				margin: 0 auto;
+				border-radius: 100px;
+				display: block;
+			}
+
+			&.active {
+				span {
+					background-color: red;
+				}
+			}
+		}
+	}
+}
+
+.sign-btn {
+	text-align: center;
+	padding: 10px;
+}
+
+.sign-reward {
+	.sign-reward-header {
+		text-indent: 15px;
+		line-height: 40px;
+	}
+}
