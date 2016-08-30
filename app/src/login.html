@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Your title">
+  <meta name="format-detection" content="telephone=no">
+  <title>登录</title>
+  <link rel="stylesheet" href="./pkgs/mui/dist/css/mui.min.css">
+  <link rel="stylesheet" href="./pkgs/font-awesome-4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/common.css">
+  <style type="text/css">
+  .qrcode input {
+    padding-right: 100px;
+    box-sizing: border-box;
+  }
+
+  .qrcode a {
+    position: absolute;
+    padding: 10px;
+    right: 0;
+    z-index: 1;
+    color: #fff;
+    background-color: #dd524d;
+  }
+
+  .qrcode a:active {
+    color: #fff;
+    background-color: #cf2d28;
+  }
+  </style>
+</head>
+
+<link rel="stylesheet" type="text/css" href="./css/online.css">
+<body>
+  <header class="mui-bar mui-bar-nav">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="javascript:history.go(-1)"></a>
+    <h1 class="mui-title">登录</h1>
+  </header>
+  <div class="mui-content online">
+    <form class="mui-input-group">
+      <div class="mui-input-row">
+        <label>姓名</label>
+        <input type="text" placeholder="曲潇潇">
+      </div>
+      <div class="mui-input-row qrcode">
+        <label>手机</label>
+        <input type="text" placeholder="15800008888">
+        <a>获取验证码</a>
+      </div>
+      <div class="mui-input-row">
+        <label>验证码</label>
+        <input type="text" placeholder="15800008888">
+      </div>      
+      <div class="mui-button-row">
+        <a class="mui-btn mui-btn-danger" href="online1.html">登录</a>
+      </div>
+    </form>
+  </div>
+<script src="./pkgs/jquery/dist/jquery.min.js"></script>
+<script src="./pkgs/mui/dist/js/mui.min.js"></script>
+<script src="./pkgs/layer/layer.js"></script>
+<!-- build:js js/index.js -->
+<script src="./js/index.js"></script>
+<!-- endbuild -->
+<script>
+  mui.init({
+    swipeBack:true //启用右滑关闭功能
+  });
+  $('.mui-icon-plus').on('click', function(){
+    $(".online").addClass("add-input");
+  });
+  $('.mui-icon-minus').on('click', function(){
+    $(".online").removeClass("add-input");
+  });
+</script>
+</body>
+</html>
